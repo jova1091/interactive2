@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Introducción Certificado Nacido Vivo</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+</head>
+
+<body>
+    <div class="containers">
+        <header>
+            <div class="titles">
+                <h3>CURSO: ESTADÍSTICAS VITALES</h3>
+                <hr>
+                <h5>Módulo 3</h5>
+                <h1>Módulo Certificación Médica de Defunciones</h1>
+            </div>
+            <a href="index.html" class="icon-home"><i class="material-icons">home</i></a>
+        </header>
+        <main>
+            <hr>
+            <div class="contenedor">
+                <img src="img/vitales-contents.png" alt="vitales" class="img-vitales-content">
+
+                <a id="btnModal1" href="#modal1" class="btn-modal1 modal-trigger pulse animated" onclick="btnModal1()">
+                    <span>1</span> Generalidades
+                </a>
+                <a id="btnModal2" href="#modal2" class="btn-modal2 modal-trigger animated" onclick="btnModal2()">
+                    <span>2</span> Elementos Conceptuales
+                </a>
+                <a id="btnModal3" href="contents2.html" class="btn-modal3 modal-trigger animated">
+                    <span>3</span> Recomendaciones para la certificación mèdica de una defunción
+                </a>
+
+                <!-- Modal 1 Structure -->
+                <div id="modal1" class="modal mdl-1">
+                    <div class="modal-content">
+                        <a href="#!" class="modal-close ico-close">
+                            <img src="img/close.png" alt="icon-close">
+                        </a>
+                        <h3 class="etiqueta">Generalidades</h3>
+                        <div class="menuTabs">
+                            <div class="texto">
+                                <div id="intro">
+                                    <p class="centered">
+                                        La certificación médica de una defunción <br> cumple dos funciones principales
+                                    </p>
+                                </div>
+                                <div id="texto1" style="display: none;">
+                                    <img src="img/btn1-modal1.png" alt="" class="ico-funcion">
+                                    <p class="centered">
+                                        Dar constancia de la ocurrencia del deceso y sus causas,
+                                        mediante procedimientos de atención post mortem y Coadyuvar en el reconocimiento
+                                        jurídico de los deberes y derechos del fallecido y sus familias, a través del
+                                        registro civil.
+                                    </p>
+                                </div>
+                                <div id="texto2">
+                                    <img src="img/btn2-modal1.png" alt="" class="ico-funcion">
+                                    <p class="centered">
+                                        contribución de información de carácter estadístico y demográfico para el
+                                        análisis de las dinámicas y transiciones de la población, así como la
+                                        caracterización del perfil de morbilidad y mortalidad que presenta el país.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="menu">
+                                <span>funciones</span>
+                                <span>importante</span>
+                                <ul class="tabs">
+                                    <li class="tab">
+                                        <a href="#texto1" onclick="hideIntro()" class="pulse animated">
+                                            <img src="img/btn1-modal1.png" alt="" class="img-btn">
+                                        </a>
+                                    </li>
+                                    <li class="tab">
+                                        <a href="#texto2" onclick="hideIntro()" class="pulse animated">
+                                            <img src="img/btn2-modal1.png" alt="" class="img-btn">
+                                        </a>
+                                    </li>
+                                    <li class="tab">
+                                        <a href="#modal1-1" class="modal-trigger modal-close pulse animated">
+                                            <img src="img/btn3-modal1.png" alt="" class="img-btn">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 1-1 Structure -->
+                <div id="modal1-1" class="modal mdl-1-1">
+                    <div class="modal-content">
+                        <a href="#modal1" class="modal-trigger modal-close ico-close" onclick="showIntro()">
+                            <img src="img/close.png" alt="icon-close">
+                        </a>
+                        <h3 class="etiqueta">Importante</h3>
+                        <p class="modal1-1_P0">
+                            El Médico y otros profesionales de la salud autorizados (enfermería, auxiliares y promotores
+                            de salud), tienen un papel muy importante en el subsistema de Estadísticas Vitales; en tanto
+                            son los encargados de diligenciar de manera completa, oportuna y veraz la información
+                            solicitada en la certificación médica de los hechos vitales.
+                        </p>
+                        <button data-target="modal1-2"
+                            class="modal-trigger modal-close btn-custom-modal pulse animated btn-modal-1-1">
+                            Siguiente <i class="material-icons">chevron_right</i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal 1-2 Structure -->
+                <div id="modal1-2" class="modal mdl-1-2">
+                    <div class="modal-content">
+                        <a href="#modal1" class="modal-trigger modal-close ico-close" onclick="showIntro()">
+                            <img src="img/close.png" alt="icon-close">
+                        </a>
+                        <h3 class="etiqueta">Importante</h3>
+                        <p class="modal1-2_P1">
+                            Colombia cuenta con una plataforma electrónica RUAFND en ambiente web, que permite el
+                            registro en línea de hechos vitales (nacimientos y defunciones); Sin embargo, si no cuenta
+                            con conectividad a internet en la institución donde se presta el servicio, es procedente
+                            diligenciar el formato físico.
+                        </p>
+                        <div class="img-mdl1-2">
+                            <img src="img/img-mdl1-2.png">
+                        </div>
+                        <button data-target="modal1-3"
+                            class="modal-trigger modal-close btn-custom-modal pulse animated btn-modal-1-2">
+                            pasos Para ingresar a la platafoma <i class="material-icons">chevron_right</i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal 1-3 Structure -->
+                <div id="modal1-3" class="modal mdl-1-3">
+                    <div class="modal-content">
+                        <a href="#!" class="modal-trigger modal-close ico-close" onclick="showIntro()">
+                            <img src="img/close.png" alt="icon-close">
+                        </a>
+                        <p class="modal1-3_P0">Para acceder a la plataforma ingrese al navegador Internet Explorer
+                            <strong>(recuerde que la plataforma solo funciona en este navegador)</strong> y sigue los
+                            pasos: </p>
+                        <p class="modal1-3_P1">Ingresa al siguiente link <a
+                                href="https://nd.ruaf.gov.co/websitende/login.aspx" target="_blank"
+                                rel="noopener noreferrer">https://nd.ruaf.gov.co/websitende/login.aspx</a></p>
+                        <p class="modal1-3_P2">Una vez se encuentre en la aplicación, diligencia el usuario y la
+                            contraseña</p>
+                    </div>
+                </div>
+
+                <!-- Modal 2 Structure -->
+                <div id="modal2" class="modal mdl-2">
+                    <div class="modal-content">
+                        <a href="#!" class="modal-close ico-close">
+                            <img src="img/close.png" alt="icon-close">
+                        </a>
+                        <h3 class="etiquetaLarga">Elementos conceptuales</h3>
+                        <p class="modal2_P0">
+                            Ahora, exploraremos algunos conceptos fundamentales para la correcta certificación de una
+                            defunción.
+                        </p>
+                        <div class="modal2-menu">
+                            <div>
+                                <button data-target="modal2-1" class="item modal-trigger modal-close"
+                                    onclick="btnModal2_1()">
+                                    <img id="imgModal2-1" src="img/btn1-modal2.png" alt="" class="pulse animated">
+                                    Caracteristicas de la defunciòn
+                                </button>
+                            </div>
+                            <div>
+                                <button data-target="modal2-2" class="item modal-trigger modal-close"
+                                    onclick="btnModal2_2()">
+                                    <img id="imgModal2-2" src="img/btn2-modal2.png" alt="" class="animated">
+                                    Procedimiento de certificación de una defunción
+                                </button>
+                            </div>
+                            <div>
+                                <button data-target="modal2-3" class="item modal-trigger modal-close"
+                                    onclick="btnModal2_3()">
+                                    <img id="imgModal2-3" src="img/btn3-modal2.png" alt="" class="animated">
+                                    Capítulos del certificado de defunción
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 2-1 Structure -->
+                <div id="modal2-1" class="modal mdl-2-1">
+                    <div class="modal-content">
+                        <a href="#modal2" class="modal-trigger modal-close ico-close">
+                            <img src="img/close.png" alt="icon-close">
+                        </a>
+                        <h3 class="etiquetaLarga">Caracteristicas de la defunción</h3>
+                        <div class="modal2-1_P0">
+                            <p>
+                                La certificación de una defunción es un acto médico, legal y administrativo que da
+                                constancia de la ocurrencia de un fallecimiento. Las características de la defunción
+                                están determinadas por la edad, sexo, sitio de ocurrencia, manera de muerte y las causas
+                                de defunción.
+                            </p>
+                        </div>
+                        <button data-target="" class="modal-trigger modal-close btn-custom-modal pulse animated btn-modal-2-1">
+                            Tipos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal 2-2 Structure -->
+                <div id="modal2-2" class="modal mdl-2-2-1">
+                    <div class="modal-content">
+                        <a href="#modal2" class="modal-trigger modal-close ico-close">
+                            <img src="img/close.png" alt="icon-close">
+                        </a>
+                        <h3 class="etiquetaLarga">Elementos conceptuales</h3>
+                        <div class="slider">
+                            <img id="prev" src="img/prev.png" alt="previows" class="modal-prev hide" onclick="prev()">
+                            <ul class="slides">
+                                <li>
+                                    <img src="./img/slide_1.png"> <!-- random image -->
+                                    <div class="txtMdl2-2-1">
+                                        <p>la expulsión o extracción completa de un producto de la concepción del cuerpo
+                                            de la madre, independientemente de la duración del embarazo, que, después de
+                                            dicha separación, respire o dé cualquier otra señal de vida, como latidos
+                                            del corazón, pulsaciones del cordón umbilical o movimiento apreciable de los
+                                            músculos voluntarios, tanto si se ha cortado o no el cordón umbilical o la
+                                            placenta permanezca o no unida. Cada producto de un nacimiento que reúna
+                                            esas condiciones se considera como un nacido vivo”. <br> (Organización
+                                            Mundial de la Salud, 2015)</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./img/slide_2.png"> <!-- random image -->
+                                    <div class="txtMdl2-2-2">
+                                        <p>El certificado de nacido vivo tiene 40 variables y está constituido por tres
+                                            capítulos: </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <img id="next" src="img/next.png" alt="next" class="modal-next" onclick="next()">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 2-3 Structure -->
+                <div id="modal2-3" class="modal mdl-2-2-1">
+                    <div class="modal-content">
+                        <a href="#modal2" class="modal-trigger modal-close ico-close">
+                            <img src="img/close.png" alt="icon-close">
+                        </a>
+                        <h3 class="etiquetaLarga">Elementos conceptuales</h3>
+                        <img src="img/slide_3.png" alt="vitales" class="img-modal">
+                        <div class="txtMdl2-3-1">
+                            <p>Si un producto de la concepción no cumple con las características y señales expuestas en
+                                la anterior definición, se considera como un nacido muerto; en este caso no se
+                                diligencia un certificado de nacimiento, sino el certificado médico de defunción, que se
+                                tratará en la siguiente unidad.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 2-4 Structure -->
+                <div id="modal2-4" class="modal mdl-2-2-1">
+                    <div class="modal-content">
+                        <a href="#!" class="modal-trigger modal-close ico-close">
+                            <img src="img/close.png" alt="icon-close">
+                        </a>
+                        <h3 class="etiquetaLarga">Elementos conceptuales</h3>
+                        <img src="img/slide_4.png" alt="vitales" class="img-modal">
+                        <div class="txtMdl2-4-1">
+                            Son aquellos recién nacidos abandonados, después de 30 días del nacimiento se les llama
+                            “Niños de padres desconocidos”. La certificación del nacimiento de un niño expósito está
+                            sujeta a normas de protección del Instituto Colombiano de Bienestar Familiar (ICBF) y han de
+                            tenerse en cuenta para la certificación médica dada la ausencia de datos, de acuerdo con lo
+                            dispuesto en el Decreto 1069 de 2015 articulo 2.2.6.12.2.4.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 3 Structure -->
+                <div id="modal3" class="modal mdl-3">
+                    <div class="modal-content">
+                        <a href="#modal2" class="modal-trigger modal-close ico-close">
+                            <img src="img/close.png" alt="icon-close">
+                        </a>
+                        <h3 class="etiquetaLarga">Caracteristicas de la defunción</h3>
+                        <div class="modal2_2P0">
+                            <p>Procedimiento para la certificación medica de un Nacido Vivo</p>
+                        </div>
+                        <div class="modal2_1Txt">
+                            <p id="modal2_1P1" class="modal2_1P1 pulse fadeIn animated" onclick="hide1()">
+                                1. Alistamiento de la información a consignar en el certificado.
+                            </p>
+                            <p id="modal2_1P2" class="modal2_1P2 hide fadeIn animated" onclick="hide2()">
+                                2. Ingreso y certificación en la plataforma (excepcionalmente en el certificado físico).
+                            </p>
+                            <p id="modal2_1P3" class="modal2_1P3 hide fadeInanimated" onclick="hide3()">
+                                3. Entrega del antecedente con las indicaciones precisas a la madre, padre o familiares
+                                del recién nacido para que oportunamente realicen la inscripción del registro civil.
+                            </p>
+                        </div>
+                        <div id="div-img" class="div-img hide fadeIn animated">
+                            <img src="./img/img_1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>2019 - Creditos</p>
+        </footer>
+    </div>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/master.js"></script>
+</body>
+
+</html>
