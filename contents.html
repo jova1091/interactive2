@@ -208,7 +208,8 @@
                                 de defunción.
                             </p>
                         </div>
-                        <button data-target="modal2-1-1" class="modal-trigger modal-close btn-custom-modal pulse animated btn-modal-2-1">
+                        <button data-target="modal2-1-1"
+                            class="modal-trigger modal-close btn-custom-modal pulse animated btn-modal-2-1">
                             Tipos
                         </button>
                     </div>
@@ -221,6 +222,7 @@
                             <img src="img/close.png" alt="icon-close">
                         </a>
                         <h3 class="etiquetaLarga">Características de la defunción</h3>
+<<<<<<< HEAD
                         <div class="modal2-1-1-menu">
                             <div>
                                 <button data-target="modal2-1-1-1" class="item modal-trigger modal-close"
@@ -278,6 +280,33 @@
                             <p>
                                 Hace referencia a las muertes ocurridas extra institucionalmente. En el caso de las defunciones es  relevante consignar en el certificado, el lugar donde ocurre el fallecimiento, pues esta información permite realizar una adecuada clasificación de la defunción.
                             </p>
+=======
+                        <div class="slider">
+                            <img id="prev" src="img/prev.png" alt="previows" class="modal-prev hide" onclick="prev()">
+                            <ul class="slides">
+                                <li>
+                                    <img src="./img/slide_1.png"> 
+                                    <div class="txtMdl2-2-1">
+                                        <p>la expulsión o extracción completa de un producto de la concepción del cuerpo
+                                            de la madre, independientemente de la duración del embarazo, que, después de
+                                            dicha separación, respire o dé cualquier otra señal de vida, como latidos
+                                            del corazón, pulsaciones del cordón umbilical o movimiento apreciable de los
+                                            músculos voluntarios, tanto si se ha cortado o no el cordón umbilical o la
+                                            placenta permanezca o no unida. Cada producto de un nacimiento que reúna
+                                            esas condiciones se considera como un nacido vivo”. <br> (Organización
+                                            Mundial de la Salud, 2015)</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="./img/slide_2.png"> 
+                                    <div class="txtMdl2-2-2">
+                                        <p>El certificado de nacido vivo tiene 40 variables y está constituido por tres
+                                            capítulos: </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <img id="next" src="img/next.png" alt="next" class="modal-next" onclick="next()">
+>>>>>>> 582ee059cff37691eba1cd28cde627ae74441c45
                         </div>
                     </div>
                 </div>
@@ -320,7 +349,7 @@
                 <!-- Modal 3 Structure -->
                 <div id="modal3" class="modal mdl-3">
                     <div class="modal-content">
-                        <a href="#modal2" class="modal-trigger modal-close ico-close">
+                        <a href="#!" class="modal-close ico-close">
                             <img src="img/close.png" alt="icon-close">
                         </a>
                         <h3 class="etiquetaXL">Recomendaciones para la certificación médica de una defunción</h3>
@@ -341,7 +370,99 @@
                                     <img id="imgModal3-2" src="img/icon2-modal3.png" alt="" class="animated">
                                 </button>
                             </div>
-                        </div>                        
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 3-1 Structure -->
+                <div id="modal3-1" class="modal mdl-3-1">
+                    <div class="modal-content">
+                        <a href="#modal3" class="modal-trigger modal-close ico-close">
+                            <img src="img/close.png" alt="icon-close">
+                        </a>
+                        <h3 class="etiqueta">Procedimentales</h3>
+                        <div id="slides-modal3-1" class="slider">
+                            <img id="modal3-1-prev" src="img/prev.png" alt="previows" class="modal3-1-prev" onclick="modal3_1_prev()">
+                            <ul class="slides">
+                                <li>
+                                    <div class="slide3-1-1">
+                                        <img src="img/ico1-slide3-1.png" alt="">
+                                        <p>
+                                            El usuario y contraseña asignado a cada profesional de salud para acceder a
+                                            la plataforma RUAFND es único e intransferible y por tanto será responsable
+                                            de la información ingresada de cada hecho vital.
+                                        </p>
+                                    </div>
+                                    <div class="slide3-1-2">
+                                        <img src="img/ico2-slide3-1.png" alt="">
+                                        <p>
+                                            Si usted certifica una defunción en una IPS todas las variables según
+                                            corresponda son de obligatorio diligenciamiento. Lo que no encuentre
+                                            relacionado en la historia clínica debe ser preguntado a familiares del
+                                            fallecido.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="slide3-1-3">
+                                        <img src="img/ico3-slide3-1.png" alt="">
+                                        <p>
+                                            Es una buena práctica diligenciar las dos partes del certificado una vez
+                                            ocurre la defunción para evitar pérdidas de información. <br>
+                                            En los casos eventuales en que esto no sea posible y diligencie las partes
+                                            del certificado por separado, verifique que tanto el número del certificado
+                                            antecedente y los datos consignados en éste, sean los mismos que se
+                                            diligencian en el certificado estadístico en el aplicativo web RUAFND.
+                                        </p>
+                                    </div>
+                                    <div class="slide3-1-4">
+                                        <img src="img/ico4-slide3-1.png" alt="">
+                                        <p>
+                                            Si el producto de la concepción nace vivo y a los pocos segundos o minutos
+                                            fallece se debe diligenciar el certificado de nacido vivo y posteriormente
+                                            el certificado de defunción.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="slide3-1-5">
+                                        <img src="img/ico4-slide3-1.png" alt="">
+                                        <p>
+                                            Tenga en cuenta que es diferente el lugar de ocurrencia (donde ocurre la defunción), el lugar de residencia (donde vive el fallecido o madre del fallecido) y el lugar de expedición (donde se certifica la defunción).
+                                        </p>
+                                    </div>
+                                    <div class="slide3-1-6">
+                                        <img src="img/ico4-slide3-1.png" alt="">
+                                        <p>
+                                            Tenga en cuenta que es diferente el lugar de ocurrencia (donde ocurre la defunción), el lugar de residencia (donde vive el fallecido o madre del fallecido) y el lugar de expedición (donde se certifica la defunción). 
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="slide3-1-7">
+                                        <img src="img/ico4-slide3-1.png" alt="">
+                                        <p>
+                                            Es una buena práctica diligenciar las dos partes del certificado una vez ocurre la defunción para evitar pérdidas de información.
+                                        </p>
+                                    </div>
+                                    <div class="slide3-1-8">
+                                        <img src="img/ico4-slide3-1.png" alt="">
+                                        <p>
+                                            Para que una persona sea considerado residente habitual (para el caso de fallecido o la madre según corresponda), en el país se considera una estancia mínima de seis meses habitando en el lugar.  
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="slide3-1-9">
+                                        <img src="img/ico5-slide3-1.png" alt="">
+                                        <p>
+                                            En lo concerniente al lugar de residencia habitual del fallecido o la madre según corresponda, en el país se considera una estancia mínima de seis meses habitando en el lugar. Tenga en cuenta que es diferente el lugar de ocurrencia (donde ocurre la defunción), el lugar de residencia (donde vive el fallecido o madre del fallecido) y el lugar de expedición (donde se certifica la defunción). 
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <img id="modal3-1-next" src="img/next.png" alt="next" class="modal3-1-next" onclick="modal3_1_next()">
+                        </div>
                     </div>
                 </div>
             </div>
