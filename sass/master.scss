@@ -1300,7 +1300,7 @@ a {
     .slides {
 
         li {
-            display: flex;
+            display: flex !important;
             justify-content: space-around;
 
             div {
