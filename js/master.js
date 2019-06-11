@@ -9,13 +9,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var options = {
         height: 350,
-        duration: 1500
+        duration: 1500,
+        interval: 30000
+    }
+
+    var options2 = {
+        height: 315,
+        duration: 1500,
+        interval: 30000
     }
     
     var ele = document.querySelector('.slider');
     M.Slider.init(ele, options);
     var instance = M.Slider.getInstance(ele);
     instance.pause();
+    
+    var el = document.querySelector('#slides-modal3-1');
+    M.Slider.init(el, options2);
+    var instan = M.Slider.getInstance(el);
+    instan.pause();
 });
 
 function prev(){
@@ -36,6 +48,17 @@ function next(){
     elem.classList.add("hide");
     var elem1 = document.getElementById("prev");
     elem1.classList.remove("hide");
+}
+function modal3_1_prev(){
+    var ele = document.querySelector('#slides-modal3-1');
+    var instance = M.Slider.getInstance(ele);
+    instance.prev(-1);
+}
+
+function modal3_1_next(){
+    var ele = document.querySelector('#slides-modal3-1');
+    var instance = M.Slider.getInstance(ele);
+    instance.next(1);
 }
 
 function btnModal1(){
