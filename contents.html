@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Introducción Certificado Nacido Vivo</title>
+    <title>Módulo Certificación Médica de Defunciones</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/master.min.css">
@@ -35,8 +35,8 @@
                 <a id="btnModal2" href="#modal2" class="btn-modal2 modal-trigger animated" onclick="btnModal2()">
                     <span>2</span> Elementos Conceptuales
                 </a>
-                <a id="btnModal3" href="contents2.html" class="btn-modal3 modal-trigger animated">
-                    <span>3</span> Recomendaciones para la certificación mèdica de una defunción
+                <a id="btnModal3" href="#modal3" class="btn-modal3 modal-trigger animated" onclick="btnModal3()">
+                    <span>3</span> Recomendaciones para la certificación médica de una defunción
                 </a>
 
                 <!-- Modal 1 Structure -->
@@ -172,7 +172,7 @@
                                 <button data-target="modal2-1" class="item modal-trigger modal-close"
                                     onclick="btnModal2_1()">
                                     <img id="imgModal2-1" src="img/btn1-modal2.png" alt="" class="pulse animated">
-                                    Caracteristicas de la defunciòn
+                                    Características de la defunciòn
                                 </button>
                             </div>
                             <div>
@@ -199,7 +199,7 @@
                         <a href="#modal2" class="modal-trigger modal-close ico-close">
                             <img src="img/close.png" alt="icon-close">
                         </a>
-                        <h3 class="etiquetaLarga">Caracteristicas de la defunción</h3>
+                        <h3 class="etiquetaLarga">Características de la defunción</h3>
                         <div class="modal2-1_P0">
                             <p>
                                 La certificación de una defunción es un acto médico, legal y administrativo que da
@@ -208,19 +208,19 @@
                                 de defunción.
                             </p>
                         </div>
-                        <button data-target="" class="modal-trigger modal-close btn-custom-modal pulse animated btn-modal-2-1">
+                        <button data-target="modal2-1-1" class="modal-trigger modal-close btn-custom-modal pulse animated btn-modal-2-1">
                             Tipos
                         </button>
                     </div>
                 </div>
 
-                <!-- Modal 2-2 Structure -->
-                <div id="modal2-2" class="modal mdl-2-2-1">
+                <!-- Modal 2-1-1 Structure -->
+                <div id="modal2-1-1" class="modal mdl-2-1-1">
                     <div class="modal-content">
-                        <a href="#modal2" class="modal-trigger modal-close ico-close">
+                        <a href="#modal2-1" class="modal-trigger modal-close ico-close">
                             <img src="img/close.png" alt="icon-close">
                         </a>
-                        <h3 class="etiquetaLarga">Elementos conceptuales</h3>
+                        <h3 class="etiquetaLarga">Características de la defunción</h3>
                         <div class="slider">
                             <img id="prev" src="img/prev.png" alt="previows" class="modal-prev hide" onclick="prev()">
                             <ul class="slides">
@@ -250,8 +250,8 @@
                     </div>
                 </div>
 
-                <!-- Modal 2-3 Structure -->
-                <div id="modal2-3" class="modal mdl-2-2-1">
+                <!-- Modal 2-1-2 Structure -->
+                <div id="modal2-1-2" class="modal mdl-2-1-2">
                     <div class="modal-content">
                         <a href="#modal2" class="modal-trigger modal-close ico-close">
                             <img src="img/close.png" alt="icon-close">
@@ -267,8 +267,8 @@
                     </div>
                 </div>
 
-                <!-- Modal 2-4 Structure -->
-                <div id="modal2-4" class="modal mdl-2-2-1">
+                <!-- Modal 2-2 Structure -->
+                <div id="modal2-2" class="modal mdl-2-2">
                     <div class="modal-content">
                         <a href="#!" class="modal-trigger modal-close ico-close">
                             <img src="img/close.png" alt="icon-close">
@@ -291,25 +291,25 @@
                         <a href="#modal2" class="modal-trigger modal-close ico-close">
                             <img src="img/close.png" alt="icon-close">
                         </a>
-                        <h3 class="etiquetaLarga">Caracteristicas de la defunción</h3>
-                        <div class="modal2_2P0">
-                            <p>Procedimiento para la certificación medica de un Nacido Vivo</p>
-                        </div>
-                        <div class="modal2_1Txt">
-                            <p id="modal2_1P1" class="modal2_1P1 pulse fadeIn animated" onclick="hide1()">
-                                1. Alistamiento de la información a consignar en el certificado.
-                            </p>
-                            <p id="modal2_1P2" class="modal2_1P2 hide fadeIn animated" onclick="hide2()">
-                                2. Ingreso y certificación en la plataforma (excepcionalmente en el certificado físico).
-                            </p>
-                            <p id="modal2_1P3" class="modal2_1P3 hide fadeInanimated" onclick="hide3()">
-                                3. Entrega del antecedente con las indicaciones precisas a la madre, padre o familiares
-                                del recién nacido para que oportunamente realicen la inscripción del registro civil.
-                            </p>
-                        </div>
-                        <div id="div-img" class="div-img hide fadeIn animated">
-                            <img src="./img/img_1.png" alt="">
-                        </div>
+                        <h3 class="etiquetaXL">Recomendaciones para la certificación médica de una defunción</h3>
+                        <div class="modal3-menu">
+                            <div>
+                                <button data-target="modal3-1" class="item modal-trigger modal-close btn3-1"
+                                    onclick="btnModal3_1()">
+                                    <span>1.</span>
+                                    Procedimentales
+                                    <img id="imgModal3-1" src="img/icon1-modal3.png" alt="" class="pulse animated">
+                                </button>
+                            </div>
+                            <div>
+                                <button data-target="modal3-2" class="item modal-trigger modal-close btn3-2"
+                                    onclick="btnModal3_2()">
+                                    <span>2.</span>
+                                    Diligenciamiento de las variables
+                                    <img id="imgModal3-2" src="img/icon2-modal3.png" alt="" class="animated">
+                                </button>
+                            </div>
+                        </div>                        
                     </div>
                 </div>
             </div>

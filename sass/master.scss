@@ -482,6 +482,14 @@ a {
         background-image: url("../img/bck-modal2-1.jpg");
     }
 
+    &.mdl-2-1-1 {
+        background-image: url("../img/bck-modal2-1-1.jpg");
+    }
+
+    &.mdl-3 {
+        background-image: url("../img/bck-modal3.jpg");
+    }
+
     .centered {
         display: block;
         margin: 0 auto;
@@ -505,6 +513,15 @@ a {
         top: 15px;
         left: 150px;
         font-size: 160%;
+    }
+
+    .etiquetaXL {
+        position: absolute;
+        width: 450px;
+        top: 1.5rem;
+        left: 6rem;
+        font-size: 125%;
+        color: $textColor1;
     }
 
     .menuTabs {
@@ -715,7 +732,7 @@ a {
     }
 }
 
-.btn-modal-1-1{
+.btn-modal-1-1 {
     bottom: 2rem;
     right: 3rem;
     float: right;
@@ -723,14 +740,14 @@ a {
     padding-right: 25px !important;
 }
 
-.btn-modal-1-2{
+.btn-modal-1-2 {
     bottom: 2rem;
     right: 1rem;
     float: right;
     padding-left: 25px !important;
 }
 
-.btn-modal-2-1{
+.btn-modal-2-1 {
     bottom: 7rem;
     left: 21.5rem;
     float: left;
@@ -837,7 +854,7 @@ a {
     font-size: 100%;
 }
 
-.modal2-1_P0{
+.modal2-1_P0 {
     position: absolute;
     width: 375px;
     top: 9rem;
@@ -864,20 +881,20 @@ a {
         border-radius: 15px;
 
         &:nth-child(1) {
-            .item{
+            .item {
                 background-color: $colorBtnModal1;
                 color: $textColor1;
             }
         }
 
         &:nth-child(2) {
-            .item{
+            .item {
                 background-color: $colorBtnModal2;
             }
         }
 
         &:nth-child(3) {
-            .item{
+            .item {
                 background-color: $colorBtnModal3;
             }
         }
@@ -915,52 +932,136 @@ a {
     }
 }
 
-.nube2 {
+.modal3-menu {
     position: absolute;
-    top: 11.5rem;
-    left: 29.5rem;
-    z-index: 2;
-    display: block;
-    max-height: 280px;
-    width: 430px !important;
-    overflow: auto;
+    right: 4rem;
+    width: 450px;
+    height: 245px;
+    bottom: 4rem;
+    font-size: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    font-family: $font2;
 
-    .title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    div {
+        &:nth-child(1) {
+            .item {
+                background-image: url("../img/btn1-modal3.png");
+            }
 
-        h3 {
-            font-size: 150%;
-            width: 50%;
-            margin: 5px 0 15px 0;
-            background-color: $colorBckTittle;
+            &:hover{
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: -3px;
+                    left: 24px;
+                    right: -25px;
+                    bottom: -4px;
+                    background: #fff;
+                    z-index: -1;
+                    width: 177px;
+                    border-radius: 15px;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: -3px;
+                    left: 24px;
+                    right: -25px;
+                    bottom: -4px;
+                    background: #fff;
+                    z-index: -1;
+                    width: 177px;
+                    border-radius: 15px;
+                    filter: blur(40px)
+                }
+
+                &:after,
+                &:before {
+                    background: linear-gradient(235deg, rgb(0, 81, 255), rgba(255, 255, 255, 0.644), rgb(0, 195, 255));
+                }
+
+            }
+        }
+
+        &:nth-child(2) {
+            .item {
+                background-image: url("../img/btn2-modal3.png");
+            }
+
+            &:hover {
+               
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: -3px;
+                    left: 250px;
+                    right: -25px;
+                    bottom: -4px;
+                    background: #fff;
+                    z-index: -1;
+                    width: 177px;
+                    border-radius: 15px;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: -3px;
+                    left: 250px;
+                    right: -25px;
+                    bottom: -4px;
+                    background: #fff;
+                    z-index: -1;
+                    width: 177px;
+                    border-radius: 15px;
+                    filter: blur(40px)
+                }
+
+                &:after,
+                &:before {
+                    background: linear-gradient(235deg, rgb(0, 81, 255), rgba(255, 255, 255, 0.644), rgb(0, 195, 255));
+                }
+                
+        }
+        }
+
+        .item {
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            min-width: 170px;
+            max-width: 170px;
+            height: 100%;
+            padding: 15px 10px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
             color: $textColor1;
-            padding: 5px;
-            -webkit-clip-path: polygon(0 0, 100% 0%, 95% 100%, 5% 100%);
-            clip-path: polygon(0 0, 100% 0%, 95% 100%, 5% 100%);
-            font-family: $font1;
-            font-weight: 700;
             text-align: center;
+            font-weight: 400;
+
+            img {
+                width: 45px;
+                height: auto;
+                display: block;
+                margin: 20px auto;
+            }
+
+            span {
+                display: block;
+                margin: auto;
+                font-size: 170%;
+                font-weight: 700;
+                font-family: $font2;
+            }
+
         }
     }
-
-    p {
-        margin-top: .9rem;
-        margin-bottom: 0;
-        color: $textColor2;
-        font-family: $font2;
-        text-align: center;
-    }
-}
-
-.etiquetaXL {
-    position: absolute;
-    width: 450px;
-    top: 105px;
-    left: 320px;
-    font-size: 125%;
-    color: $textColor1;
 }
 
 .div-img {

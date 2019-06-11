@@ -56,6 +56,15 @@ function btnModal2(){
     elem2.classList.add("pulse");
 }
 
+function btnModal3(){
+    var elem = document.getElementById("btnModal1");
+    elem.classList.remove("pulse");
+    var elem1 = document.getElementById("btnModal2");
+    elem1.classList.remove("pulse");
+    var elem2 = document.getElementById("btnModal3");
+    elem2.classList.remove("pulse");
+}
+
 function hideIntro(){
     var elem = document.getElementById("intro");
     elem.classList.add("hide");
@@ -85,4 +94,16 @@ function btnModal2_3() {
     elem.classList.remove("pulse");
     var elem1 = document.getElementById("imgModal2-4");
     elem1.classList.add("pulse");
+}
+
+function btnModal3_1(){
+    var elem = document.getElementById("imgModal3-1");
+    elem.classList.remove("pulse");
+    var elem1 = document.getElementById("imgModal3-2");
+    elem1.classList.add("pulse");
+}
+
+function btnModal3_2(){
+    var elem = document.getElementById("imgModal3-2");
+    elem.classList.remove("pulse");
 }
