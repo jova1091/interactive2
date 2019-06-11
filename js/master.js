@@ -96,6 +96,13 @@ function btnModal2_3() {
     elem1.classList.add("pulse");
 }
 
+function btnModal2_1_1_1() {
+    var elem = document.getElementById("imgModal2-1-1-1");
+    elem.classList.remove("pulse");
+    var elem1 = document.getElementById("imgModal2-1-1-2");
+    elem1.classList.add("pulse");
+}
+
 function btnModal3_1(){
     var elem = document.getElementById("imgModal3-1");
     elem.classList.remove("pulse");

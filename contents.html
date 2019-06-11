@@ -221,31 +221,63 @@
                             <img src="img/close.png" alt="icon-close">
                         </a>
                         <h3 class="etiquetaLarga">Características de la defunción</h3>
-                        <div class="slider">
-                            <img id="prev" src="img/prev.png" alt="previows" class="modal-prev hide" onclick="prev()">
-                            <ul class="slides">
-                                <li>
-                                    <img src="./img/slide_1.png"> <!-- random image -->
-                                    <div class="txtMdl2-2-1">
-                                        <p>la expulsión o extracción completa de un producto de la concepción del cuerpo
-                                            de la madre, independientemente de la duración del embarazo, que, después de
-                                            dicha separación, respire o dé cualquier otra señal de vida, como latidos
-                                            del corazón, pulsaciones del cordón umbilical o movimiento apreciable de los
-                                            músculos voluntarios, tanto si se ha cortado o no el cordón umbilical o la
-                                            placenta permanezca o no unida. Cada producto de un nacimiento que reúna
-                                            esas condiciones se considera como un nacido vivo”. <br> (Organización
-                                            Mundial de la Salud, 2015)</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="./img/slide_2.png"> <!-- random image -->
-                                    <div class="txtMdl2-2-2">
-                                        <p>El certificado de nacido vivo tiene 40 variables y está constituido por tres
-                                            capítulos: </p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <img id="next" src="img/next.png" alt="next" class="modal-next" onclick="next()">
+                        <div class="modal2-1-1-menu">
+                            <div>
+                                <button data-target="modal2-1-1-1" class="item modal-trigger modal-close"
+                                    onclick="btnModal2_1_1_1()">
+                                    <img id="imgModal2-1-1-1" src="img/btn1-modal2-1-1.png" alt="" class="pulse animated">
+                                    <span>Tipos de defunción</span>
+                                </button>
+                            </div>
+                            <div>
+                                <button data-target="modal2-1-1-2" class="item modal-trigger modal-close"
+                                    onclick="btnModal2_1_1_2()">
+                                    <img id="imgModal2-1-1-2" src="img/btn1-modal2-1-2.png" alt="" class="animated">
+                                    <span>Sitio de ocurrencia</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 2-1-1-1 Structure -->
+                <div id="modal2-1-1-1" class="modal mdl-2-1-1-1">
+                    <div class="modal-content">
+                        <a href="#modal2-1-1" class="modal-trigger modal-close ico-close">
+                            <img src="img/close.png" alt="icon-close">
+                        </a>
+                        <h3 class="etiquetaLarga">Tipos de defunción</h3>
+                        <div class="modal2-1-1-1_P0">
+                            <p>
+                                <strong>Defunción fetal:</strong> Es la muerte de un producto de la concepción, antes de su expulsión o extracción completa del cuerpo de su madre, independiente de la duración del embarazo. La muerte está indicada por el hecho que después de la separación, el feto no respira ni da ninguna otra señal de vida como latidos del corazón, pulsaciones del cordón umbilical o movimientos efectivos de los músculos de contracción voluntaria (Organización Mundial de la Salud, 2015).
+                            </p>
+                        </div>
+                        <div class="modal2-1-1-1_P1">
+                            <p>
+                                <strong>Defunción no fetal:</strong> Desaparición permanente de todo signo de vida, cualquiera que sea el tiempo transcurrido desde el nacimiento con vida (cesación postnatal de las funciones vitales sin posibilidad de resucitar). Esta definición excluye las defunciones fetales (Organización Naciones Unidas-ONU, 1974).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 2-1-1-2 Structure -->
+                <div id="modal2-1-1-2" class="modal mdl-2-1-1-2">
+                    <div class="modal-content">
+                        <a href="#modal2-1-1" class="modal-trigger modal-close ico-close">
+                            <img src="img/close.png" alt="icon-close">
+                        </a>
+                        <h3 class="etiquetaLarga">Sitio de ocurrencia</h3>
+                        <div class="modal2-1-1-2_P0">
+                            <span>Institucionales</span>
+                            <p>
+                                Son muertes que ocurren en el interior de una institución prestadora de servicios de salud. (hospital, clínica, centro o puesto de salud).
+                            </p>
+                        </div>
+                        <div class="modal2-1-1-2_P1">
+                            <span>Domicilio-otro sitio</span>
+                            <p>
+                                Hace referencia a las muertes ocurridas extra institucionalmente. En el caso de las defunciones es  relevante consignar en el certificado, el lugar donde ocurre el fallecimiento, pues esta información permite realizar una adecuada clasificación de la defunción.
+                            </p>
                         </div>
                     </div>
                 </div>
