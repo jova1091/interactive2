@@ -20,6 +20,8 @@ $textColor2: rgb(0, 68, 129);
 $textColor3: rgb(0, 182, 249);
 $textColor4: rgb(0, 40, 86);
 $textColor5: rgb(185, 188, 189);
+$textColor6: rgb(32,32,32);
+$textColor7: rgb(25,44,85);
 
 $headerBckColor: rgb(15, 84, 149);
 $colorBckTittle: rgb(60, 83, 149);
@@ -493,6 +495,14 @@ a {
 
     &.mdl-2-1-1-2 {
         background-image: url("../img/bck-modal2-1-1-2.jpg");
+    }
+
+    &.mdl-2-1-1-3 {
+        background-image: url("../img/bck-modal2-1-1-3.jpg");
+    }
+
+    &.mdl-2-1-1-4 {
+        background-image: url("../img/bck-modal2-1-1-4.jpg");
     }
 
     &.mdl-3 {
@@ -981,6 +991,32 @@ a {
         &:nth-child(3) {
             .item {
                 background-color: $colorBtnModal3;
+                color: $textColor1;
+                position: absolute;
+                left: 266px;
+                top: 119px;
+
+                span {
+                    top: 50px;
+                    width: 100px;
+                }
+            }
+        }
+
+        &:nth-child(4) {
+            .item {
+                background-color: $colorBtnModal3;
+                color: $textColor1;
+                position: absolute;
+                left: 567px;
+                top: 119px;
+
+                span {
+                    top: 42px;
+                    width: 82px;
+                    font-size: $fontSize - 1;
+                    color: $textColor6;
+                }
             }
         }
 
@@ -1002,7 +1038,7 @@ a {
             span {
                 position: absolute;
                 top: 58px;
-                font-size: $fontSize + 1;
+                font-size: $fontSize;
             }
             &:hover {
                 color: $textColor1 !important;
@@ -1092,6 +1128,171 @@ a {
         margin-bottom: 20px;
         display: inline-block;
     }
+}
+
+.modal2-1-1-3_P0 {
+    position: relative;
+    margin: 10px;
+    width: 243px;
+    height: auto;
+    top: 49px;
+    left: 251px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: $textColor1;
+    line-height: 1.1;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-name: fadeIn;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    & strong {
+        font-weight: 800;
+        display: inline-block;
+    }
+    & img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 500px;
+        z-index: 1;
+    }
+    & p {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        padding: 20px;
+        width: 400px;
+        margin-left: 70px;
+        line-height: 1.2;
+    }
+}
+
+.modal2-1-1-3_P1 {
+    position: relative;
+    margin: 10px;
+    width: 243px;
+    height: auto;
+    top: 162px;
+    left: 300px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: $textColor1;
+    line-height: 1.1;
+    animation-duration: 6s;
+    animation-delay: 8s;
+    animation-name: fadeIn;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    & strong {
+        font-weight: 800;
+        display: inline-block;
+    }
+    & img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 500px;
+        z-index: 1;
+    }
+    & p {
+        position: absolute;
+        top: -5px;
+        left: 0;
+        z-index: 2;
+        padding: 20px;
+        width: 400px;
+        margin-left: 70px;
+        line-height: 1.2;
+    }
+}
+
+.modal2-1-1-3_P2 {
+    position: relative;
+    margin: 10px;
+    width: 243px;
+    height: auto;
+    top: 292px;
+    left: 249px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: $textColor1;
+    line-height: 1.1;
+    animation-duration: 6s;
+    animation-delay: 15s;
+    animation-name: fadeIn;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    & strong {
+        font-weight: 800;
+        display: inline-block;
+    }
+    & img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 500px;
+        z-index: 1;
+    }
+    & p {
+        position: absolute;
+        top: -5px;
+        left: 0;
+        z-index: 2;
+        padding: 20px;
+        width: 400px;
+        margin-left: 70px;
+        line-height: 1.2;
+    }
+}
+
+.modal2-1-1-4_P0 {
+    top: 131px;
+    left: 47px;
+    position: absolute;
+    font-size: $fontSize - 3;
+    background: yellow;
+    height: 25px;
+    width: 173px;
+    text-align: center;
+    & p:not(#text_01) {
+        top: 3px;
+        position: relative;
+        font-weight: 700;
+    }
+    & #text_01 {
+        color: $textColor7;
+        position: absolute;
+        left: 508px;
+        width: 297px;
+        padding: 20px;
+        top: 38px;
+        font-size: $fontSize - 2;
+        display: none;
+    }
+    &:hover{
+        background: red;
+        & #text_01 {
+            display: block;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 1;
+      }
 }
 
 .modal3-menu {

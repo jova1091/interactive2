@@ -126,6 +126,13 @@ function btnModal2_1_1_1() {
     elem1.classList.add("pulse");
 }
 
+function btnModal2_1_1_2() {
+    var elem = document.getElementById("imgModal2-1-1-2");
+    elem.classList.remove("pulse");
+    var elem1 = document.getElementById("imgModal2-1-1-3");
+    elem1.classList.add("pulse");
+}
+
 function btnModal3_1(){
     var elem = document.getElementById("imgModal3-1");
     elem.classList.remove("pulse");
