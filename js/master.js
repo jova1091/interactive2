@@ -10,24 +10,15 @@ document.addEventListener('DOMContentLoaded', function () {
     var options = {
         height: 350,
         duration: 1500,
-        interval: 30000
+        interval: 30000,
+        indicators: false
     }
-
-    var options2 = {
-        height: 315,
-        duration: 1500,
-        interval: 30000
-    }
-    
-    var ele = document.querySelector('.slider');
-    M.Slider.init(ele, options);
-    var instance = M.Slider.getInstance(ele);
-    instance.pause();
     
     var el = document.querySelector('#slides-modal3-1');
-    M.Slider.init(el, options2);
+    M.Slider.init(el, options);
     var instan = M.Slider.getInstance(el);
     instan.pause();
+
 });
 
 function prev(){
@@ -49,16 +40,45 @@ function next(){
     var elem1 = document.getElementById("prev");
     elem1.classList.remove("hide");
 }
+
 function modal3_1_prev(){
     var ele = document.querySelector('#slides-modal3-1');
     var instance = M.Slider.getInstance(ele);
     instance.prev(-1);
+    flechanext();
 }
 
 function modal3_1_next(){
     var ele = document.querySelector('#slides-modal3-1');
     var instance = M.Slider.getInstance(ele);
     instance.next(1);
+    flechaprev();
+}
+
+function flechaprev(){
+    var el = document.querySelector('#slides-modal3-1 .slides li:nth-child(2).active');
+    if(el != null){
+        var elem = document.querySelector('#modal3-1-prev');
+        elem.classList.remove("hide")
+    }
+    var ele = document.querySelector('#slides-modal3-1 .slides li:nth-child(5).active');
+    if(ele != null){
+        var elem = document.querySelector('#modal3-1-next');
+        elem.classList.add("hide")
+    }
+}
+
+function flechanext(){
+    var el = document.querySelector('#slides-modal3-1 .slides li:nth-child(1).active');
+    if(el != null){
+        var elem = document.querySelector('#modal3-1-prev');
+        elem.classList.add("hide")
+    }
+    var ele = document.querySelector('#slides-modal3-1 .slides li:nth-child(4).active');
+    if(ele != null){
+        var elem = document.querySelector('#modal3-1-next');
+        elem.classList.remove("hide")
+    }
 }
 
 function btnModal1(){
