@@ -20,8 +20,8 @@ $textColor2: rgb(0, 68, 129);
 $textColor3: rgb(0, 182, 249);
 $textColor4: rgb(0, 40, 86);
 $textColor5: rgb(185, 188, 189);
-$textColor6: rgb(32,32,32);
-$textColor7: rgb(25,44,85);
+$textColor6: rgb(32, 32, 32);
+$textColor7: rgb(25, 44, 85);
 
 $headerBckColor: rgb(15, 84, 149);
 $colorBckTittle: rgb(60, 83, 149);
@@ -30,6 +30,9 @@ $mainHr: rgb(0, 27, 72);
 $colorBtnModal1: rgb(93, 129, 191);
 $colorBtnModal2: rgb(0, 182, 249);
 $colorBtnModal3: rgb(126, 188, 188);
+
+$colorTab: rgb(170, 191, 227);
+$colorActiveTab: rgb(170, 191, 227);
 
 $headerHr: rgba(255, 255, 255, 0.39);
 
@@ -514,6 +517,11 @@ a {
         background-size: cover;
     }
 
+    &.mdl-3-2 {
+        background-image: url("../img/bck-modal3-2.jpg");
+        background-size: 100% 100%;
+    }
+
     .centered {
         display: block;
         margin: 0 auto;
@@ -971,8 +979,9 @@ a {
     justify-content: space-around;
     align-items: stretch;
     z-index: -1;
+
     div {
-        
+
         &:nth-child(1) {
             .item {
                 background-color: $colorBtnModal1;
@@ -1033,6 +1042,7 @@ a {
             color: $mainHr;
             text-align: center;
             font-weight: 400;
+
             img {
                 width: 110px;
                 height: auto;
@@ -1040,11 +1050,13 @@ a {
                 margin: 15px auto;
                 position: absolute;
             }
+
             span {
                 position: absolute;
                 top: 58px;
                 font-size: $fontSize;
             }
+
             &:hover {
                 color: $textColor1 !important;
                 background-color: rgba(10, 116, 255, 0.548);
@@ -1070,6 +1082,7 @@ a {
     text-align: left;
     color: $textColor1;
     line-height: 1.1;
+
     & strong {
         font-weight: 800;
     }
@@ -1088,6 +1101,7 @@ a {
     text-align: left;
     color: $textColor1;
     line-height: 1.3;
+
     & strong {
         font-weight: 800;
     }
@@ -1106,6 +1120,7 @@ a {
     text-align: left;
     color: $textColor4;
     line-height: 1.4;
+
     & span {
         font-size: $fontSize + 2;
         font-weight: 800;
@@ -1127,6 +1142,7 @@ a {
     text-align: left;
     color: $textColor4;
     line-height: 1.1;
+
     & span {
         font-size: $fontSize + 2;
         font-weight: 800;
@@ -1153,10 +1169,12 @@ a {
     animation-name: fadeIn;
     opacity: 0;
     animation-fill-mode: forwards;
+
     & strong {
         font-weight: 800;
         display: inline-block;
     }
+
     & img {
         position: absolute;
         top: 0;
@@ -1164,6 +1182,7 @@ a {
         max-width: 500px;
         z-index: 1;
     }
+
     & p {
         position: absolute;
         top: 0;
@@ -1194,10 +1213,12 @@ a {
     animation-name: fadeIn;
     opacity: 0;
     animation-fill-mode: forwards;
+
     & strong {
         font-weight: 800;
         display: inline-block;
     }
+
     & img {
         position: absolute;
         top: 0;
@@ -1205,6 +1226,7 @@ a {
         max-width: 500px;
         z-index: 1;
     }
+
     & p {
         position: absolute;
         top: -5px;
@@ -1235,10 +1257,12 @@ a {
     animation-name: fadeIn;
     opacity: 0;
     animation-fill-mode: forwards;
+
     & strong {
         font-weight: 800;
         display: inline-block;
     }
+
     & img {
         position: absolute;
         top: 0;
@@ -1246,6 +1270,7 @@ a {
         max-width: 500px;
         z-index: 1;
     }
+
     & p {
         position: absolute;
         top: -5px;
@@ -1267,11 +1292,13 @@ a {
     height: 25px;
     width: 173px;
     text-align: center;
+
     & p:not(#text_01) {
         top: 3px;
         position: relative;
         font-weight: 700;
     }
+
     & #text_01 {
         color: $textColor7;
         position: absolute;
@@ -1282,8 +1309,10 @@ a {
         font-size: $fontSize - 2;
         display: none;
     }
-    &:hover{
+
+    &:hover {
         background: red;
+
         & #text_01 {
             display: block;
         }
@@ -1293,11 +1322,11 @@ a {
 @keyframes fadeIn {
     from {
         opacity: 0;
-      }
-    
-      to {
+    }
+
+    to {
         opacity: 1;
-      }
+    }
 }
 
 .modal3-menu {
@@ -1533,7 +1562,7 @@ a {
                 }
 
             }
-        
+
             .slide3-1-3 {
                 p {
                     background-color: #fff;
@@ -1569,6 +1598,113 @@ a {
     left: -40px;
     height: 50px;
     top: calc(50% - 25px);
+    cursor: pointer;
+    z-index: 3;
+}
+
+.menuTabs2 {
+    position: absolute;
+    top: 6rem;
+    width: 650px;
+    right: 1.5rem;
+
+    .tabs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .tab {
+            max-width: 24.5%;
+            min-width: 24.5%;
+
+            a {
+                padding: 0;
+                display: flex;
+                justify-content: flex-start;
+                align-content: center;
+                background-color: $colorTab;
+                color: #6878AD;
+
+                &:hover,
+                &:focus,
+                &.active {
+                    background-color: $textColor4 !important;
+                    color: $textColor1;
+                }
+
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+
+                p {
+                    font-size: 70%;
+                    line-height: 1.3;
+                    margin: auto;
+                }
+
+            }
+        }
+
+        .indicator {
+            background-color: $textColor1 !important;
+        }
+    }
+
+    .tab-content {
+        height: 230px;
+    }
+}
+
+.slider2 {
+    margin-top: 0;
+
+    .slides {
+        background-image: url("../img/slider1-modal3-2.png") !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+        width: 90%;
+        margin: 0 auto !important;
+
+        li {
+            display: flex;
+            align-items: center;
+            top: 1rem !important;
+            left: 3rem !important;
+            width: 80% !important;
+            height: 205px !important;
+            padding: 10px;
+        }
+    }
+}
+
+.frase {
+    display: flex;
+    align-items: center;
+    font-size: 100%;
+    margin: 10px 0;
+    color: $textColor7;
+
+    img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.modal3-2-next {
+    position: absolute;
+    right: 0px;
+    height: 50px;
+    top: calc(50% - 50px);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.modal3-2-prev {
+    position: absolute;
+    left: 0px;
+    height: 50px;
+    top: calc(50% - 50px);
     cursor: pointer;
     z-index: 3;
 }
