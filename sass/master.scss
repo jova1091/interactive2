@@ -165,7 +165,8 @@ footer {
 }
 
 button,
-a {
+a,
+img {
     animation-duration: 3s;
     animation-delay: 1s;
     animation-iteration-count: infinite;
@@ -1206,8 +1207,7 @@ a {
     text-align: left;
     color: $textColor1;
     line-height: 1.1;
-    animation-duration: 6s;
-    animation-delay: 1s;
+    animation-duration: 2s;
     animation-name: fadeIn;
     opacity: 0;
     animation-fill-mode: forwards;
@@ -1250,8 +1250,8 @@ a {
     text-align: left;
     color: $textColor1;
     line-height: 1.1;
-    animation-duration: 6s;
-    animation-delay: 8s;
+    animation-duration: 2s;
+    animation-delay: 2s;
     animation-name: fadeIn;
     opacity: 0;
     animation-fill-mode: forwards;
@@ -1294,8 +1294,8 @@ a {
     text-align: left;
     color: $textColor1;
     line-height: 1.1;
-    animation-duration: 6s;
-    animation-delay: 15s;
+    animation-duration: 2s;
+    animation-delay: 4s;
     animation-name: fadeIn;
     opacity: 0;
     animation-fill-mode: forwards;
@@ -1322,6 +1322,16 @@ a {
         width: 400px;
         margin-left: 70px;
         line-height: 1.2;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
 
@@ -1526,6 +1536,7 @@ a {
     justify-content: center;
     font-weight: 700;
     font-size: 13px;
+    margin-bottom: 25px;
     &:hover {
         color: $textColor1;
         background: $colorHoverText;
@@ -1545,6 +1556,7 @@ a {
     justify-content: center;
     font-weight: 700;
     font-size: 13px;
+    margin-bottom: 25px;
     &:hover {
         color: $textColor1;
         background: $colorHoverText;
@@ -1570,6 +1582,7 @@ a {
     justify-content: center;
     font-weight: 700;
     font-size: 13px;
+    margin-bottom: 25px;
     &:hover {
         color: $textColor1;
         background: $colorHoverText;
@@ -1605,10 +1618,11 @@ a {
     position: absolute;
     display: flex;
     align-items: center;
-    top: 132px;
+    top: 136px;
     left: 223px;
+    width: 210px;
     & img {
-        max-width: 80px;
+        max-width: 70px;
     }
     & p {
         margin-left: 13px;
@@ -1623,10 +1637,11 @@ a {
     position: absolute;
     display: flex;
     align-items: center;
-    top: 212px;
+    top: 215px;
     left: 223px;
+    width: 210px;
     & img {
-        max-width: 80px;
+        max-width: 70px;
     }
     & p {
         margin-left: 13px;
@@ -1641,10 +1656,11 @@ a {
     position: absolute;
     display: flex;
     align-items: center;
-    top: 290px;
+    top: 292px;
     left: 223px;
+    width: 210px;
     & img {
-        max-width: 80px;
+        max-width: 70px;
     }
     & p {
         margin-left: 13px;
@@ -1672,16 +1688,6 @@ a {
     }
     & strong {
         font-weight: 700;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
     }
 }
 
