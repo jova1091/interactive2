@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.modal2-1-1-6_P1').onclick = function() {btnModal2_1_1_6_2()};
     document.querySelector('.modal2-1-1-6_P2').onclick = function() {btnModal2_1_1_6_3()};
 
-
 });
 
 function btnModal2_1_1_6_1() {
