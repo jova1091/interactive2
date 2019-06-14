@@ -46,10 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var insSlider3_4 = M.Slider.getInstance(slider3_4);
     insSlider3_4.pause();
 
-    document.querySelector('.modal2-1-1-6_P0').onclick = function() {btnModal2_1_1_6_1()};
-    document.querySelector('.modal2-1-1-6_P1').onclick = function() {btnModal2_1_1_6_2()};
-    document.querySelector('.modal2-1-1-6_P2').onclick = function() {btnModal2_1_1_6_3()};
-
 });
 
 function btnModal2_1_1_6_1() {
@@ -246,9 +242,11 @@ function btnModal3_2(){
 
 // Para cambiar la img en el menu tab modal 3
 //*******************************************************************
-function changeIcon(){
-    var ele = document.querySelector('.menuTabs2 .tabs .tab .active img');
+function changeIcon(ele1){
+    var ele = document.querySelector('.menuTabs2 .tabs .tab a.active img');
     ele.src = "img/tab-inactive.png";
+    var elem = document.getElementById(ele1);
+    elem.src = "img/tab-active.png";
 }
 
 // Para el slider 1 en modal3-1
