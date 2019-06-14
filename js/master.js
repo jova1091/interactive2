@@ -140,8 +140,6 @@ function btnModal2_2(){
 function btnModal2_3() {
     var elem = document.getElementById("imgModal2-3");
     elem.classList.remove("pulse");
-    var elem1 = document.getElementById("imgModal2-4");
-    elem1.classList.add("pulse");
 }
 
 function btnModal2_1_1_1() {
@@ -244,6 +242,13 @@ function btnModal3_1(){
 function btnModal3_2(){
     var elem = document.getElementById("imgModal3-2");
     elem.classList.remove("pulse");
+}
+
+// Para cambiar la img en el menu tab modal 3
+//*******************************************************************
+function changeIcon(){
+    var ele = document.querySelector('.menuTabs2 .tabs .tab .active img');
+    ele.src = "img/tab-inactive.png";
 }
 
 // Para el slider 1 en modal3-1
@@ -454,4 +459,103 @@ function flechanext5(){
         var elem = document.querySelector('#modal3-2-4-next');
         elem.classList.remove("hide")
     }
+}
+
+function hide1(){
+    var elem = document.getElementById("modal2-2-1P2");
+    elem.classList.remove("hide");
+    elem.classList.add("pulse");
+    var elem1 = document.getElementById("modal2-2-1P1");
+    elem1.classList.remove("pulse");
+}
+
+function hide2(){
+    var elem = document.getElementById("modal2-2-1P3");
+    elem.classList.remove("hide");
+    elem.classList.add("pulse");
+    var elem1 = document.getElementById("modal2-2-1P2");
+    elem1.classList.remove("pulse");
+}
+
+function hide3(){
+    var elem = document.getElementById("div-img");
+    elem.classList.remove("hide");
+    var elem1 = document.getElementById("modal2-2-1P3");
+    elem1.classList.remove("pulse");
+}
+
+function hidden1(){
+    var elem = document.getElementById("txtModal2-2-2-P2");
+    elem.classList.remove("hide");
+    elem.classList.add("pulse");
+    var elem1 = document.getElementById("txtModal2-2-2-P1");
+    elem1.classList.remove("pulse");
+}
+
+function hidden2(){
+    var elem = document.getElementById("txtModal2-2-2-P3");
+    elem.classList.remove("hide");
+    var elem1 = document.getElementById("txtModal2-2-2-P2");
+    elem1.classList.remove("pulse");
+}
+
+function removeHide(){
+    var elem1 = document.getElementById("btn2-model2-3");
+    elem1.classList.add("pulse");
+    var elem2 = document.getElementById("textosModal2-3-P6");
+    elem2.classList.add("hide");
+    var elem3 = document.getElementById("textosModal2-3-P1");
+    elem3.classList.remove("hide");
+}
+function removeHide1(){
+    var elem = document.getElementById("btn2-model2-3");
+    elem.classList.remove("pulse");
+    var elem1 = document.getElementById("btn3-model2-3");
+    elem1.classList.add("pulse");
+    var elem2 = document.getElementById("textosModal2-3-P1");
+    elem2.classList.add("hide");
+    var elem3 = document.getElementById("textosModal2-3-P2");
+    elem3.classList.remove("hide");
+}
+
+function removeHide2(){
+    var elem = document.getElementById("btn3-model2-3");
+    elem.classList.remove("pulse");
+    var elem1 = document.getElementById("btn4-model2-3");
+    elem1.classList.add("pulse");
+    var elem2 = document.getElementById("textosModal2-3-P2");
+    elem2.classList.add("hide");
+    var elem3 = document.getElementById("textosModal2-3-P3");
+    elem3.classList.remove("hide");
+}
+
+function removeHide3(){
+    var elem = document.getElementById("btn4-model2-3");
+    elem.classList.remove("pulse");
+    var elem1 = document.getElementById("btn5-model2-3");
+    elem1.classList.add("pulse");
+    var elem2 = document.getElementById("textosModal2-3-P3");
+    elem2.classList.add("hide");
+    var elem3 = document.getElementById("textosModal2-3-P4");
+    elem3.classList.remove("hide");
+}
+
+function removeHide4(){
+    var elem = document.getElementById("btn5-model2-3");
+    elem.classList.remove("pulse");
+    var elem1 = document.getElementById("btn6-model2-3");
+    elem1.classList.add("pulse");
+    var elem2 = document.getElementById("textosModal2-3-P4");
+    elem2.classList.add("hide");
+    var elem3 = document.getElementById("textosModal2-3-P5");
+    elem3.classList.remove("hide");
+}
+
+function removeHide5(){
+    var elem = document.getElementById("btn6-model2-3");
+    elem.classList.remove("pulse");
+    var elem2 = document.getElementById("textosModal2-3-P5");
+    elem2.classList.add("hide");
+    var elem3 = document.getElementById("textosModal2-3-P6");
+    elem3.classList.remove("hide");
 }

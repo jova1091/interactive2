@@ -22,6 +22,7 @@ $textColor4: rgb(0, 40, 86);
 $textColor5: rgb(185, 188, 189);
 $textColor6: rgb(32, 32, 32);
 $textColor7: rgb(25, 44, 85);
+$textColor8: rgb(19, 33, 72);
 
 $headerBckColor: rgb(15, 84, 149);
 $colorBckTittle: rgb(60, 83, 149);
@@ -173,7 +174,7 @@ footer {
 
 button,
 a,
-img {
+img, .txtModal-2-2-2 p {
     animation-duration: 3s;
     animation-delay: 1s;
     animation-iteration-count: infinite;
@@ -242,6 +243,45 @@ img {
         margin-bottom: .9rem;
         color: $textColor2;
         font-family: $font2;
+    }
+}
+
+.nube2 {
+    position: absolute;
+    top: 11.5rem;
+    left: 29.5rem;
+    z-index: 2;
+    display: block;
+    max-height: 280px;
+    width: 430px !important;
+    overflow: auto;
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            font-size: 150%;
+            width: 50%;
+            margin: 5px 0 15px 0;
+            background-color: $colorBckTittle;
+            color: $textColor1;
+            padding: 5px;
+            -webkit-clip-path: polygon(0 0, 100% 0%, 95% 100%, 5% 100%);
+            clip-path: polygon(0 0, 100% 0%, 95% 100%, 5% 100%);
+            font-family: $font1;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+
+    p {
+        margin-top: .9rem;
+        margin-bottom: 0;
+        color: $textColor2;
+        font-family: $font2;
+        text-align: center;
     }
 }
 
@@ -653,6 +693,19 @@ img {
         background-image: url("../img/bck-modal2-1-1-6.jpg");
     }
 
+    &.mdl-2-2-1 {
+        background-image: url("../img/bck-modal2-2-1.jpg");
+    }
+
+    &.mdl-2-2-2 {
+        background-image: url("../img/bck-modal2-2-2.jpg");
+    }
+
+    &.mdl-2-3 {
+        background-image: url("../img/bck-modal2-3.jpg");
+        background-size: 100% 100%;    
+    }
+    
     &.mdl-3 {
         background-image: url("../img/bck-modal3.jpg");
     }
@@ -1691,6 +1744,193 @@ img {
     }
     & strong {
         font-weight: 700;
+    }
+}
+
+.img-modal2-2-1{
+    position: relative;
+    width: 100%;
+    top: 35px;
+    height: 230px;
+
+    img {
+        width: auto;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.btn-modal-2-2-1 {
+    bottom: 1rem;
+    right: 3rem;
+    float: right;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+
+.modal2-2-1Txt {
+    position: relative;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+    p {
+        width: 33%;
+        height: 95px;
+        margin: 0;
+        padding: 10px;
+        font-size: 84%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .modal2-2-1P1 {
+        background-color: #E62E6A;
+    }
+
+    .modal2-2-1P2 {
+        background-color: #018ABE;
+    }
+
+    .modal2-2-1P3 {
+        background-color: #0F5595;
+    }
+}
+
+.txtModal-2-2-2 {
+    position: relative;
+    width: 73%;
+    top: 50px;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+    p {
+        width: 33%;
+        height: 280px;
+        margin: 0;
+        padding: 15px;
+        font-size: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;   
+
+        &:nth-child(1){
+            background-image: url('../img/bck-modal2-2-2_P1.png');
+        }
+
+        &:nth-child(2){
+            background-image: url('../img/bck-modal2-2-2_P2.png');
+        }
+
+        &:nth-child(3){
+            background-image: url('../img/bck-modal2-2-2_P3.png');
+        }
+
+    }
+}
+
+.tip{
+    position: relative;
+    width: 73%;
+    height: 81px;
+    top: 55px;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+    background-image: url('../img/tip.png');
+
+    p{
+        width: 75%;
+        margin-left: 15%;
+    }
+}
+
+.btn-modal2-3{
+    position: absolute !important;
+    width: 100px;
+    height: auto;
+
+    &.btn1{
+        top: 4.5rem;
+        left: 1rem;
+    }
+
+    &.btn2{
+        top: 5.5rem;
+        left: 8.5rem;
+    }
+
+    &.btn3{
+        top: 10.5rem;
+        left: 14rem;
+    }
+
+    &.btn4{
+        top: 17.5rem;
+        left: 14rem;
+    }
+
+    &.btn5{
+        top: 21.5rem;
+        left: 8rem;
+    }
+
+    &.btn6{
+        top: 22.5rem;
+        left: 1rem;
+    }
+} 
+
+.textosModal2-3{
+    position: absolute;
+    width: 350px;
+    height: 295px;
+    right: 12rem;
+    top: 7.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    color: $textColor2;
+
+    .titles {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 10px;
+
+        *{
+            margin-bottom: 0;
+        }
+
+        h6{
+            color: $textColor8;
+            font-weight: 600;
+        }
+    }
+
+    p{
+        font-size: 90%;
     }
 }
 
