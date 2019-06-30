@@ -90,15 +90,16 @@ header {
     background-image: url('../img/headerFondo.svg');
     background-position: top center;
     background-size: 115%;
-    padding: 8px 100px;
+    padding: 1vh 10vw;
+    height: 12vh;
     color: $textColor1;
     font-family: $font2;
     display: flex !important;
     justify-content: space-between;
 
     .titles {
-        width: 415px;
-        height: 85px;
+        display: block;
+        font-size: 1.1vw;
 
         h1,
         h3,
@@ -131,9 +132,12 @@ header {
     .icon-home {
         display: block;
         margin: auto 0;
-        font-size: 30px;
         color: $textColor1;
         cursor: pointer;
+
+        .material-icons{
+            font-size: 2vw;
+        }
     }
 }
 
@@ -141,13 +145,7 @@ main {
     flex: 1 0 auto;
     background-image: url(../img/fondo.jpg);
     background-size: 100% 100%;
-
-    &#contents-2-1-1 {
-    background-image: url("../img/bck-modal2-1-1.jpg");
-    background-size: cover;
-    z-index: 1;
-    position: relative;
-}
+    font-size: 1.1vw;
 
     >hr {
         margin: 5px 0px;
@@ -156,7 +154,8 @@ main {
     }
 
     .contenedor {
-        margin: 0 100px;
+        margin: 0 10vw;
+        font-size: 1.1vw;
     }
 }
 
@@ -165,16 +164,18 @@ footer {
     justify-content: center;
     align-items: center;
     border-top: 1px solid $mainHr;
-    max-height: 50px;
-    height: 50px;
+    max-height: 10vh;
+    height: 10vh;
     font-weight: 400;
     font-family: $font2;
+    font-size: 1.1vw;
     color: $textColor4;
 }
 
 button,
 a,
-img, .txtModal-2-2-2 p {
+img,
+.txtModal-2-2-2 p {
     animation-duration: 3s;
     animation-delay: 1s;
     animation-iteration-count: infinite;
@@ -192,7 +193,7 @@ img, .txtModal-2-2-2 p {
 // Home
 //*********************************************************
 .img-vitales {
-    width: 80%;
+    width: 79vw;
     margin: 0 auto;
     display: block;
 }
@@ -201,10 +202,10 @@ img, .txtModal-2-2-2 p {
     position: absolute;
     display: block;
     z-index: 2;
-    top: 11rem;
-    left: 15rem;
-    width: 400px !important;
-    max-height: 280px;
+    top: 26vh;
+    left: 12vw;
+    width: 35vw !important;
+    max-height: 40vh;
     overflow: auto;
 
     .titles {
@@ -214,8 +215,8 @@ img, .txtModal-2-2-2 p {
 
         h2 {
             line-height: 0;
-            margin: 16px 5px 0 0;
-            top: 8px;
+            margin: 3vh 0.5vw 0 0;
+            top: 1.5vh;
             position: relative;
             color: $colorTittle1;
             font-family: $font2;
@@ -226,7 +227,7 @@ img, .txtModal-2-2-2 p {
         h3 {
             font-size: 100%;
             width: 100%;
-            margin: 5px 0 15px 0;
+            margin: 1vh 0 2vh;
             background-color: $colorBckTittle;
             color: $textColor1;
             padding: 5px;
@@ -238,9 +239,9 @@ img, .txtModal-2-2-2 p {
     }
 
     p {
-        margin-left: 3rem;
+        margin-left: 4.5vw;
         margin-top: 0;
-        margin-bottom: .9rem;
+        margin-bottom: 2vh;
         color: $textColor2;
         font-family: $font2;
     }
@@ -248,12 +249,11 @@ img, .txtModal-2-2-2 p {
 
 .nube2 {
     position: absolute;
-    top: 11.5rem;
-    left: 29.5rem;
+    top: 30vh;
+    left: 35vw;
     z-index: 2;
-    display: block;
-    max-height: 280px;
-    width: 430px !important;
+    max-height: 40vh;
+    width: 32vw!important;
     overflow: auto;
 
     .title {
@@ -287,8 +287,8 @@ img, .txtModal-2-2-2 p {
 
 .btn-audio {
     position: relative;
-    top: 0rem;
-    left: 12rem;
+    top: 0;
+    left: 7vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -298,9 +298,9 @@ img, .txtModal-2-2-2 p {
     font-size: 150%;
     font-family: $font2;
     text-decoration: none;
-    width: 115px;
+    width: 10vw;
     text-align: center;
-    padding: 0 5px;
+    padding: 0 1vw;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
     outline-color: rgba(255, 255, 255, .5);
     outline-offset: 0px;
@@ -348,8 +348,8 @@ img, .txtModal-2-2-2 p {
 }
 
 .btn-home {
-    top: -2.5rem;
-    right: 11.5rem;
+    top: -6vh;
+    right: 6vw;
     float: right;
     font-style: italic;
 }
@@ -359,28 +359,28 @@ img, .txtModal-2-2-2 p {
 .img-vitales-content {
     display: block;
     height: auto;
-    width: 75%;
+    width: 69vw;
     margin: 0 auto;
 }
 
 .btn-modal1 {
     position: absolute !important;
-    top: 7.5rem;
-    left: 40rem;
-    width: 188px;
-    max-width: 188px;
-    height: 188px;
-    max-height: 188px;
+    top: 16vh;
+    left: 44vw;
+    width: 15vw;
+    max-width: 15vw;
+    height: 30vh;
+    max-height: 30vh;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border: 15px solid rgba(0, 112, 187, 0.5);
+    border: 10px solid rgba(0, 112, 187, 0.5);
     background-color: rgba(0, 26, 72, 0.85);
     color: $textColor1;
     cursor: pointer;
-    font-size: 103%;
+    font-size: 1.1vw;
     font-family: $font2;
     font-weight: 400;
     text-decoration: none;
@@ -411,22 +411,22 @@ img, .txtModal-2-2-2 p {
 
 .btn-modal2 {
     position: absolute !important;
-    top: 28rem;
-    left: 30.5rem;
-    width: 180px;
-    max-width: 180px;
-    height: 180px;
-    max-height: 180px;
+    top: 59vh;
+    left: 33vw;
+    width: 15vw;
+    max-width: 15vw;
+    height: 30vh;
+    max-height: 30vh;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border: 15px solid rgba(0, 112, 187, 0.8);
+    border: 10px solid rgba(0, 112, 187, 0.8);
     background-color: rgba(0, 146, 244, 0.95);
     color: white;
     cursor: pointer;
-    font-size: $fontSize;
+    font-size: 1.1vw;
     font-family: $font2;
     font-weight: 400;
     text-decoration: none;
@@ -458,22 +458,22 @@ img, .txtModal-2-2-2 p {
 
 .btn-modal3 {
     position: absolute !important;
-    top: 28rem;
-    left: 51.5rem;
-    width: 180px;
-    max-width: 180px;
-    height: 180px;
-    max-height: 180px;
+    top: 59vh;
+    left: 56vw;
+    width: 15vw;
+    max-width: 15vw;
+    height: 30vh;
+    max-height: 30vh;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border: 15px solid rgba(0, 146, 244, 0.8);
+    border: 10px solid rgba(0, 146, 244, 0.8);
     background-color: rgba(0, 112, 187, 0.95);
     color: white;
     cursor: pointer;
-    font-size: 90%;
+    font-size: 1.1vw;
     font-family: $font2;
     font-weight: 400;
     text-decoration: none;
@@ -504,136 +504,134 @@ img, .txtModal-2-2-2 p {
     }
 }
 
+
 .mdl-2-1-1 {
-    background-image: url("../img/Recurso\ 2.png");
-    background-repeat: no-repeat;
-    background-position-x: 50%;
-    background-position-y: 120%;
     position: relative;
-    background-size: 50%;
-    height: 555px;
-    width: 100%;
-
-    & .bgTitle {
-        width: 750px;
-    }
-
-    & .etiquetaLarga {
-        position: absolute;
-        color: $textColor1;
-        top: 0;
-        left: 150px;
-        font-size: 160%;
-    }
-
-    & .modal2-1-1-menu {
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 555px;
-        font-size: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: stretch;
-        z-index: 1;
-        position: absolute;
-    
-        div {
-    
-            &:nth-child(1) {
-                .item {
-                    background-color: $colorBtnModal1;
-                    color: $textColor1;
-                    position: absolute;
-                    left: 299px;
-                    top: 120px;
-                }
-            }
-    
-            &:nth-child(2) {
-                .item {
-                    background-color: $colorBtnModal2;
-                    color: $textColor1;
-                    position: absolute;
-                    left: 397px;
-                    bottom: 70px;
-                }
-            }
-    
-            &:nth-child(3) {
-                .item {
-                    background-color: $colorBtnModal3;
-                    color: $textColor1;
-                    position: absolute;
-                    left: 456px;
-                    top: 160px;
-                }
-            }
-    
-            &:nth-child(4) {
-                .item {
-                    background-color: $colorBtnModal3;
-                    color: $textColor1;
-                    position: absolute;
-                    right: 444px;
-                    top: 160px;
-                }
-            }
-    
-            &:nth-child(5) {
-                .item {
-                    background-color: $colorBtnModal3;
-                    color: $textColor1;
-                    position: absolute;
-                    right: 382px;
-                    bottom: 70px;
-                }
-            }
-    
-            &:nth-child(6) {
-                .item {
-                    background-color: $colorBtnModal3;
-                    color: $textColor1;
-                    position: absolute;
-                    right: 299px;
-                    top: 120px;
-                }
-            }
-    
-            .item {
-                color: $mainHr;
-                font-weight: 400;
-                width: 90px;
-                height: 90px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: 2px solid green;
-                img {
-                    width: 135px;
-                    height: auto;
-                    display: block;
-                    position: absolute;
-                }
-                span {
-                    position: absolute;
-                    font-size: $fontSize;
-                    line-height: 1.4;
-                }
-    
-               
-    
-            }
-        }
-    }
-
 }
 
+.mdl-2-1-1 .bgTitle {
+    width: 50vw;
+    position: absolute;
+    top: 2vh;
+}
 
+.mdl-2-1-1 .etiquetaLarga {
+    position: absolute;
+    color: white;
+    top: 4vh;
+    left: 11vw;
+    font-size: 1.7vw;
+    margin: 0 !important;
+    z-index: 1;
+}
+
+.mdl-2-1-1 .modal2-1-1-menu {
+    width: 100vw;
+    height: 80vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 1;
+    position: absolute
+}
+
+.mdl-2-1-1 .modal2-1-1-menu div:nth-child(1) .item {
+    background: transparent !important;
+    color: white;
+    position: absolute;
+    left: 19.1vw;
+    top: 14vh;
+}
+
+.mdl-2-1-1 .modal2-1-1-menu div:nth-child(2) .item {
+    background: transparent !important;
+    color: white;
+    position: absolute;
+    left: 26.7vw;
+    bottom: 8vh;
+}
+
+.mdl-2-1-1 .modal2-1-1-menu div:nth-child(3) .item {
+    background: transparent !important;
+    color: white;
+    position: absolute;
+    left: 31.3vw;
+    top: 19vh;
+}
+
+.mdl-2-1-1 .modal2-1-1-menu div:nth-child(4) .item {
+    background: transparent !important;
+    color: white;
+    position: absolute;
+    right: 30.3vw;
+    top: 19vh;
+}
+
+.mdl-2-1-1 .modal2-1-1-menu div:nth-child(5) .item {
+    background: transparent !important;
+    color: white;
+    position: absolute;
+    right: 25.5vw;
+    bottom: 8vh;
+}
+
+.mdl-2-1-1 .modal2-1-1-menu div:nth-child(6) .item {
+    background: transparent !important;
+    color: white;
+    position: absolute;
+    right: 19vw;
+    top: 14vh;
+}
+
+.mdl-2-1-1 .modal2-1-1-menu div .item {
+    font-weight: 400;
+    width: 9vw;
+    height: 23vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.mdl-2-1-1 .modal2-1-1-menu div .item img {
+    width: 10vw;
+    height: auto;
+    display: block;
+    position: absolute
+}
+
+.mdl-2-1-1 .modal2-1-1-menu div .item span {
+    position: absolute;
+    font-size: 1.1vw;
+    line-height: 1.4;
+}
+
+#bgPage {
+    background: url('../img/Recurso_2.png') no-repeat;
+    background-size: 53%;
+    position: absolute;
+    width: 100vw;
+    height: 40vh;
+    top: 25vh;
+    background-position-x: 50%;
+}
 
 .modal {
     border-radius: 0 !important;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     min-height: 62% !important;
     max-height: 62% !important;
@@ -703,9 +701,9 @@ img, .txtModal-2-2-2 p {
 
     &.mdl-2-3 {
         background-image: url("../img/bck-modal2-3.jpg");
-        background-size: 100% 100%;    
+        background-size: 100% 100%;
     }
-    
+
     &.mdl-3 {
         background-image: url("../img/bck-modal3.jpg");
     }
@@ -729,8 +727,8 @@ img, .txtModal-2-2-2 p {
 
     .etiqueta {
         position: absolute;
-        top: 17px;
-        left: 260px;
+        top: 2vh;
+        left: 15vw;
         color: $textColor1;
         font-size: 180%;
         font-weight: 800;
@@ -740,39 +738,37 @@ img, .txtModal-2-2-2 p {
     .etiquetaLarga {
         position: absolute;
         color: $textColor1;
-        top: 15px;
-        left: 150px;
+        top: 2vh;
+        left: 10vw;
         font-size: 160%;
     }
 
     .etiquetaXL {
         position: absolute;
-        width: 450px;
-        top: 1.5rem;
-        left: 6rem;
+        width: 35vw;
+        top: 2.5vh;
+        left: 6vw;
         font-size: 125%;
         color: $textColor1;
     }
 
     .menuTabs {
         position: absolute;
-        top: 75px;
-        left: 425px;
-        height: 365px;
-        width: 435px;
-        background: transparent;
+        top: 10vh;
+        left: 31vw;
+        height: 50vh;
+        width: 32vw;
+        padding: 0 1vw;
         display: grid;
-        padding: 0 15px;
 
         .texto {
-            margin: 15px 0px 0px 0px;
-            height: 205px;
+            margin: 2vh 0 0 0;
+            height: 27vh;
             white-space: normal;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding-bottom: 15px;
 
             strong {
                 color: $textColor4;
@@ -780,10 +776,10 @@ img, .txtModal-2-2-2 p {
             }
 
             .ico-funcion {
-                width: 85px;
+                width: 5vw;
                 height: auto;
                 display: block;
-                margin: 8px auto;
+                margin: 1vh auto;
             }
 
             #intro {
@@ -797,8 +793,8 @@ img, .txtModal-2-2-2 p {
         }
 
         .menu {
-            margin: 35px 0px 0px !important;
-            height: 95px;
+            margin: 7vh 0 0!important;
+            height: 15vh;
             border: 1px dotted $btnBckcolor;
             border-radius: 15px;
             display: flex;
@@ -807,19 +803,20 @@ img, .txtModal-2-2-2 p {
 
 
             .tabs {
-                height: 85%;
+                height: 13vh;
                 background: transparent;
                 display: flex;
                 border-radius: 14px;
                 overflow: hidden;
-                margin-top: 2%;
+                margin-top: 1vh;
                 justify-content: space-around;
 
                 .tab {
                     height: 100%;
                     flex: 1 0 auto;
                     background-size: 100% 100%;
-                    max-width: 100px !important;
+                    max-width: 10vw !important;
+                    width: 10vw;
 
                     &:nth-child(1) {
                         background-image: url("../img/bck-btn1-modal1.png");
@@ -849,27 +846,28 @@ img, .txtModal-2-2-2 p {
                 position: absolute;
                 margin: 0 auto;
                 display: block;
-                font-size: $fontSize - 1;
+                font-size: 1.1vw;
                 font-weight: 800;
                 color: $textColor2;
                 line-height: 1;
                 z-index: 1;
-                margin-top: -13px;
+                margin-top: -3vh;
 
                 &:nth-child(1) {
-                    left: 117px;
+                    left: 8vw;
                 }
 
                 &:nth-child(2) {
-                    left: 313px;
+                    left: 22.5vw;
                 }
             }
 
 
             .img-btn {
-                height: 60px;
-                margin-top: 9px;
-                margin-left: -4px;
+                display: block;
+                margin: 2vh auto;
+                height: 4vw;
+                width: auto;
                 border-radius: 50%;
                 box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
                 outline-color: rgba(15, 58, 250, 0.5);
@@ -932,6 +930,7 @@ img, .txtModal-2-2-2 p {
     top: 15px;
     right: 15px;
     z-index: 1000;
+
     img {
         width: 100%;
         height: 100%;
@@ -941,6 +940,7 @@ img, .txtModal-2-2-2 p {
 .btn-custom-modal {
     position: absolute !important;
     display: flex;
+    align-items: center;
     padding: 10px 10px 10px 10px !important;
     text-transform: none !important;
     font-size: 120% !important;
@@ -967,34 +967,34 @@ img, .txtModal-2-2-2 p {
 }
 
 .btn-modal-1-1 {
-    bottom: 2rem;
-    right: 3rem;
+    bottom: 4vh;
+    right: 4vw;
     float: right;
-    padding-left: 25px !important;
-    padding-right: 25px !important;
+    padding-left: 2vw!important;
+    padding-right: 2vw!important;
 }
 
 .btn-modal-1-2 {
-    bottom: 2rem;
-    right: 1rem;
+    bottom: 5vh;
+    right: 1vw;
     float: right;
-    padding-left: 25px !important;
+    padding-left: 2vw!important;
 }
 
 .btn-modal-2-1 {
-    bottom: 7rem;
-    left: 21.5rem;
+    bottom: 12vh;
+    left: 24vw;
     float: left;
-    padding: 6px 45px !important;
+    padding: 1vh 4vw!important;
 }
 
 .modal1-1_P0 {
     position: absolute;
-    margin: 25px 10px;
-    width: 400px;
-    height: 220px;
-    top: 7.5rem;
-    left: 6rem;
+    margin: 0;
+    width: 30vw;
+    height: 35vh;
+    top: 16vh;
+    left: 7vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1005,18 +1005,18 @@ img, .txtModal-2-2-2 p {
 
 .modal1-2_P1 {
     position: absolute;
-    width: 400px;
-    top: 6rem;
-    left: 6rem;
+    width: 30vw;
+    top: 12vh;
+    left: 7vw;
 }
 
 .img-mdl1-2 {
     position: absolute;
-    top: 16rem;
-    left: 5rem;
-    width: 445px;
+    bottom: 5vh;
+    left: 5.6vw;
+    width: 32.5vw;
     border-radius: 15px;
-    padding: 25px 10px;
+    padding: 2vh 1vw;
     background: $textColor4;
 
     img {
@@ -1026,10 +1026,10 @@ img, .txtModal-2-2-2 p {
 }
 
 .modal1-3_P0 {
-    width: 415px;
-    left: 50px;
+    width: 35vw;
+    left: 4vw;
     position: absolute;
-    top: 15px;
+    top: 1vh;
     font-weight: 600 !important;
     font-size: 100%;
     color: $textColor4;
@@ -1049,9 +1049,9 @@ img, .txtModal-2-2-2 p {
 
 .modal1-3_P1 {
     position: absolute;
-    bottom: 45px;
-    left: 115px;
-    width: 227px;
+    bottom: 6.5vh;
+    left: 8vw;
+    width: 18vw;
     font-size: 100% !important;
     color: white;
     text-align: center;
@@ -1068,9 +1068,9 @@ img, .txtModal-2-2-2 p {
 
 .modal1-3_P2 {
     position: absolute;
-    bottom: 45px;
-    left: 540px;
-    width: 235px;
+    bottom: 6.5vh;
+    left: 39vw;
+    width: 17vw;
     font-size: 100%;
     color: white;
     text-align: center;
@@ -1079,31 +1079,21 @@ img, .txtModal-2-2-2 p {
 
 .modal2_P0 {
     position: absolute;
-    width: 335px;
-    top: 6.5rem;
-    left: 17rem;
+    width: 25vw;
+    top: 13vh;
+    left: 19vw;
     font-family: $font2;
     color: $textColor4;
     font-weight: 500;
     font-size: 100%;
 }
 
-.modal2-1_P0 {
-    position: absolute;
-    width: 375px;
-    top: 9rem;
-    left: 5rem;
-    font-family: $font2;
-    font-weight: 500;
-    font-size: 100%;
-}
-
 .modal2-menu {
     position: absolute;
-    right: 20px;
-    width: 580px;
-    height: 215px;
-    bottom: 15px;
+    right: 1vw; 
+    width: 45vw;
+    height: 32vh;
+    bottom: 2vh;
     font-size: 100%;
     display: flex;
     justify-content: space-around;
@@ -1134,8 +1124,8 @@ img, .txtModal-2-2-2 p {
         }
 
         .item {
-            min-width: 140px;
-            max-width: 140px;
+            min-width: 12vw;
+            max-width: 12vw;
             height: 100%;
             padding: 15px 10px;
             border-radius: 15px;
@@ -1148,10 +1138,10 @@ img, .txtModal-2-2-2 p {
             font-weight: 400;
 
             img {
-                width: 80px;
+                width: 6vw;
                 height: auto;
                 display: block;
-                margin: 15px auto;
+                margin: 2vh auto;
             }
 
             &:hover {
@@ -1166,21 +1156,133 @@ img, .txtModal-2-2-2 p {
     }
 }
 
+.modal2-1_P0 {
+    position: absolute;
+    width: 25vw;
+    top: 19vh;
+    left: 7vw;
+    font-family: $font2;
+    font-weight: 500;
+    font-size: 100%;
+}
 
+.modal2-1-1-menu {
+    position: absolute;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    z-index: -1;
+
+    div {
+
+        &:nth-child(1) {
+            .item {
+                background-color: $colorBtnModal1;
+                color: $textColor1;
+                position: absolute;
+                left: 19.1vw;
+                top: 14vh;
+            }
+        }
+
+        &:nth-child(2) {
+            .item {
+                background-color: $colorBtnModal2;
+                color: $textColor1;
+                position: absolute;
+                left: 26.7vw;
+                bottom: 8vh;
+            }
+        }
+
+        &:nth-child(3) {
+            .item {
+                background-color: $colorBtnModal3;
+                color: $textColor1;
+                position: absolute;
+                left: 31.3vw;
+                top: 19vh;
+            }
+        }
+
+        &:nth-child(4) {
+            .item {
+                background-color: $colorBtnModal3;
+                color: $textColor1;
+                position: absolute;
+                right: 30.3vw;
+                top: 19vh;
+            }
+        }
+
+        &:nth-child(5) {
+            .item {
+                background-color: $colorBtnModal3;
+                color: $textColor1;
+                position: absolute;
+                right: 25.5vw;
+                bottom: 8vh;
+            }
+        }
+
+        &:nth-child(6) {
+            .item {
+                background-color: $colorBtnModal3;
+                color: $textColor1;
+                position: absolute;
+                right: 19vw;
+                top: 14vh;
+            }
+        }
+
+        .item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: $mainHr;
+            text-align: center;
+            font-weight: 400;
+            width: 9vw;
+            height: 23vh;
+
+            img {
+                width: 10vw;
+                height: auto;
+                display: block;
+                position: absolute;
+            }
+
+            span {
+                position: absolute;
+                font-size: 1.1vw;
+                line-height: 1.4;
+            }
+
+            &:hover {
+                color: $textColor1 !important;
+                background-color: rgba(10, 116, 255, 0.548);
+                border: 1px solid rgba(0, 0, 0, 0.301);
+                outline-color: rgba(255, 255, 255, 0);
+                outline-offset: 15px;
+            }
+
+        }
+    }
+}
 
 .modal2-1-1-1_P0 {
     position: absolute;
-    margin: 25px 10px;
-    width: 460px;
-    height: 220px;
-    top: 45px;
-    left: 298px;
+    width: 31vw;
+    height: 21vh;
+    top: 14vh;
+    left: 24vw;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: left;
     color: $textColor1;
     line-height: 1.1;
+    font-size: 1.05vw;
 
     & strong {
         font-weight: 800;
@@ -1190,16 +1292,17 @@ img, .txtModal-2-2-2 p {
 .modal2-1-1-1_P1 {
     position: absolute;
     margin: 10px 10px;
-    width: 460px;
-    height: 100px;
-    bottom: 34px;
-    left: 298px;
+    width: 31vw;
+    height: 21vh;
+    bottom: 4vh;
+    left: 24vw;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: left;
     color: $textColor1;
     line-height: 1.3;
+    font-size: 1.05vw;
 
     & strong {
         font-weight: 800;
@@ -1208,11 +1311,10 @@ img, .txtModal-2-2-2 p {
 
 .modal2-1-1-2_P0 {
     position: absolute;
-    margin: 10px;
-    width: 253px;
-    height: auto;
-    bottom: 34px;
-    left: 39px;
+    width: 19vw;
+    height: 19vh;
+    bottom: 4vh;
+    left: 3vw;
     display: block;
     justify-content: center;
     align-items: center;
@@ -1221,7 +1323,7 @@ img, .txtModal-2-2-2 p {
     line-height: 1.4;
 
     & span {
-        font-size: $fontSize + 2;
+        font-size: 1.5vw;
         font-weight: 800;
         margin-bottom: 20px;
         display: inline-block;
@@ -1230,20 +1332,20 @@ img, .txtModal-2-2-2 p {
 
 .modal2-1-1-2_P1 {
     position: absolute;
-    margin: 10px;
-    width: 258px;
-    height: auto;
-    bottom: 15px;
-    left: 357px;
+    width: 18vw;
+    height: 23vh;
+    bottom: 2vh;
+    left: 27vw;
     display: block;
     justify-content: center;
     align-items: center;
     text-align: left;
     color: $textColor4;
-    line-height: 1.1;
+    line-height: 1.2;
+    font-size: 1.05vw;
 
     & span {
-        font-size: $fontSize + 2;
+        font-size: 1.5vw;
         font-weight: 800;
         margin-bottom: 20px;
         display: inline-block;
@@ -1252,11 +1354,10 @@ img, .txtModal-2-2-2 p {
 
 .modal2-1-1-3_P0 {
     position: relative;
-    margin: 10px;
-    width: 243px;
+    width: 18vw;
     height: auto;
-    top: 49px;
-    left: 251px;
+    top: 8.5vh;
+    left: 18vw;
     display: block;
     justify-content: center;
     align-items: center;
@@ -1275,31 +1376,27 @@ img, .txtModal-2-2-2 p {
 
     & img {
         position: absolute;
-        top: 0;
-        left: 0;
-        max-width: 500px;
+        max-width: 34vw;
         z-index: 1;
     }
 
     & p {
         position: absolute;
-        top: 0;
-        left: 0;
         z-index: 2;
-        padding: 20px;
-        width: 400px;
-        margin-left: 70px;
+        padding: 2.5vh;
+        width: 29vw;
+        margin-left: 10vh;
         line-height: 1.2;
+        font-size: 1.1vw;
     }
 }
 
 .modal2-1-1-3_P1 {
     position: relative;
-    margin: 10px;
-    width: 243px;
-    height: auto;
-    top: 162px;
-    left: 300px;
+    width: 35vw;
+    height: 16vh;
+    top: 24vh;
+    left: 23vw;
     display: block;
     justify-content: center;
     align-items: center;
@@ -1319,31 +1416,27 @@ img, .txtModal-2-2-2 p {
 
     & img {
         position: absolute;
-        top: 0;
-        left: 0;
-        max-width: 500px;
+        max-width: 34.5vw;
         z-index: 1;
     }
 
     & p {
         position: absolute;
-        top: -5px;
-        left: 0;
         z-index: 2;
-        padding: 20px;
-        width: 400px;
-        margin-left: 70px;
+        padding: 2.5vh;
+        width: 29vw;
+        margin-left: 10vh;
         line-height: 1.2;
+        font-size: 1.1vw;
     }
 }
 
 .modal2-1-1-3_P2 {
     position: relative;
-    margin: 10px;
-    width: 243px;
-    height: auto;
-    top: 292px;
-    left: 249px;
+    width: 35vw;
+    height: 16vh;
+    top: 25vh;
+    left: 19vw;
     display: block;
     justify-content: center;
     align-items: center;
@@ -1354,6 +1447,7 @@ img, .txtModal-2-2-2 p {
     animation-delay: 4s;
     animation-name: fadeIn;
     opacity: 0;
+
     animation-fill-mode: forwards;
 
     & strong {
@@ -1363,21 +1457,28 @@ img, .txtModal-2-2-2 p {
 
     & img {
         position: absolute;
-        top: 0;
-        left: 0;
-        max-width: 500px;
+        max-width: 34.5vw;
         z-index: 1;
     }
 
     & p {
         position: absolute;
-        top: -5px;
-        left: 0;
         z-index: 2;
-        padding: 20px;
-        width: 400px;
-        margin-left: 70px;
+        padding: 2.5vh;
+        width: 29vw;
+        margin-left: 10vh;
         line-height: 1.2;
+        font-size: 1.1vw;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
 
@@ -1392,170 +1493,192 @@ img, .txtModal-2-2-2 p {
 }
 
 .modal2-1-1-4_P0 {
-    top: 131px;
-    left: 48px;
+    top: 17vh;
+    left: 3.6vw;
     position: absolute;
-    font-size: $fontSize - 3;
+    font-size: 0.9vw;
     background: $colorBtnModal3;
-    height: 25px;
-    width: 177px;
+    height: 3vh;
+    width: 12.8vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    &:hover{
+
+    &:hover {
         background: $colorHoverText;
     }
 }
 
 .modal2-1-1-4_P1 {
-    top: 171px;
-    left: 48px;
+    top: 22vh;
+    left: 3.7vw;
     position: absolute;
-    font-size: 13px;
+    font-size: 0.9vw;
     background: $colorBtnModal3;
-    height: 25px;
-    width: 89px;
+    height: 3vh;
+    width: 6.1vw;
     display: flex;
     align-items: center;
     justify-content: center;
+
     &:hover {
         background: $colorHoverText;
-        & ~ .textos_mdl2-1-1-4 #modal2-1-1-4_P0 {
+
+        &~.textos_mdl2-1-1-4 #modal2-1-1-4_P0 {
             display: none;
         }
-        & ~ .textos_mdl2-1-1-4 #modal2-1-1-4_P1 {
+
+        &~.textos_mdl2-1-1-4 #modal2-1-1-4_P1 {
             display: table;
         }
     }
 }
 
 .modal2-1-1-4_P2 {
-    top: 171px;
-    left: 136px;
+    top: 22vh;
+    left: 10.2vw;
     position: absolute;
-    font-size: 13px;
+    font-size: 0.9vw;
     background: $colorBtnModal3;
-    height: 25px;
-    width: 89px;
+    height: 3vh;
+    width: 6.2vw;
     display: flex;
     align-items: center;
     justify-content: center;
+
     &:hover {
         background: $colorHoverText;
-        & ~ .textos_mdl2-1-1-4 #modal2-1-1-4_P0 {
+
+        &~.textos_mdl2-1-1-4 #modal2-1-1-4_P0 {
             display: none;
         }
-        & ~ .textos_mdl2-1-1-4 #modal2-1-1-4_P2 {
+
+        &~.textos_mdl2-1-1-4 #modal2-1-1-4_P2 {
             display: table;
         }
     }
 }
 
 .modal2-1-1-4_P3 {
-    top: 211px;
-    left: 138px;
+    top: 27vh;
+    left: 10.2vw;
     position: absolute;
-    font-size: 13px;
+    font-size: 0.9vw;
     background: $colorBtnModal3;
-    height: 25px;
-    width: 177px;
+    height: 3vh;
+    width: 12.8vw;
     display: flex;
     align-items: center;
     justify-content: center;
+
     &:hover {
         background: $colorHoverText;
-        & ~ .textos_mdl2-1-1-4 #modal2-1-1-4_P0 {
+
+        &~.textos_mdl2-1-1-4 #modal2-1-1-4_P0 {
             display: none;
         }
-        & ~ .textos_mdl2-1-1-4 #modal2-1-1-4_P3 {
+
+        &~.textos_mdl2-1-1-4 #modal2-1-1-4_P3 {
             display: table;
         }
     }
 }
 
 .modal2-1-1-4_P4 {
-    top: 251px;
-    left: 228px;
+    top: 32vh;
+    left: 16.8vw;
     position: absolute;
-    font-size: 13px;
+    font-size: 0.9vw;
     background: $colorBtnModal3;
-    height: 25px;
-    width: 177px;
+    height: 3vh;
+    width: 12.8vw;
     display: flex;
     align-items: center;
     justify-content: center;
+
     &:hover {
         background: $colorHoverText;
-        & ~ .textos_mdl2-1-1-4 #modal2-1-1-4_P0 {
+
+        &~.textos_mdl2-1-1-4 #modal2-1-1-4_P0 {
             display: none;
         }
-        & ~ .textos_mdl2-1-1-4 #modal2-1-1-4_P4 {
+
+        &~.textos_mdl2-1-1-4 #modal2-1-1-4_P4 {
             display: table;
         }
     }
 }
 
 .modal2-1-1-4_P5 {
-    top: 281px;
-    left: 228px;
+    top: 38vh;
+    left: 16.8vw;
     position: absolute;
-    font-size: 12px;
+    font-size: 0.8vw;
     background: $colorBtnModal3;
-    height: 25px;
-    width: 89px;
+    height: 3vh;
+    width: 6.2vw;
     display: flex;
     align-items: center;
     justify-content: center;
+
     &:hover {
         background: $colorHoverText;
-        & ~ .textos_mdl2-1-1-4 #modal2-1-1-4_P0 {
+
+        &~.textos_mdl2-1-1-4 #modal2-1-1-4_P0 {
             display: none;
         }
-        & ~ .textos_mdl2-1-1-4 #modal2-1-1-4_P5 {
+
+        &~.textos_mdl2-1-1-4 #modal2-1-1-4_P5 {
             display: table;
         }
     }
 }
 
 .modal2-1-1-4_P6 {
-    top: 291px;
-    left: 316px;
+    top: 38vh;
+    left: 23.3vw;
     position: absolute;
-    font-size: 12px;
+    font-size: 0.8vw;
     background: $colorBtnModal3;
-    height: 25px;
-    width: 89px;
+    height: 3vh;
+    width: 6.2vw;
     display: flex;
     align-items: center;
     justify-content: center;
+
     &:hover {
         background: $colorHoverText;
-        & ~ .textos_mdl2-1-1-4 #modal2-1-1-4_P0 {
+
+        &~.textos_mdl2-1-1-4 #modal2-1-1-4_P0 {
             display: none;
         }
-        & ~ .textos_mdl2-1-1-4 #modal2-1-1-4_P6 {
+
+        &~.textos_mdl2-1-1-4 #modal2-1-1-4_P6 {
             display: table;
         }
     }
 }
 
 .modal2-1-1-4_P7 {
-    top: 321px;
-    left: 228px;
+    top: 43vh;
+    left: 16.8vw;
     position: absolute;
-    font-size: 12px;
+    font-size: 0.9vw;
     background: $colorBgBtn;
     height: 25px;
-    width: 267px;
+    width: 19.4vw;
     display: flex;
     align-items: center;
     justify-content: center;
+
     &:hover {
         background: $colorHoverText;
-        & ~ .textos_mdl2-1-1-4 #modal2-1-1-4_P0 {
+
+        &~.textos_mdl2-1-1-4 #modal2-1-1-4_P0 {
             display: none;
         }
-        & ~ .textos_mdl2-1-1-4 #modal2-1-1-4_P7 {
+
+        &~.textos_mdl2-1-1-4 #modal2-1-1-4_P7 {
             display: table;
         }
     }
@@ -1563,18 +1686,28 @@ img, .txtModal-2-2-2 p {
 
 .textos_mdl2-1-1-4 {
     display: flex;
-    width: 292px;
+    width: 40vh;
     position: absolute;
-    top: 99px;
-    right: 39px;
-    height: 303px;
+    top: 13vh;
+    right: 3vw;
+    height: 42vh;
     align-items: center;
-    padding: 30px;
+    padding: 2vw;
     text-align: center;
+    font-size: 1.2vw;
+
     & strong {
         font-weight: 700;
     }
-    & #modal2-1-1-4_P1, #modal2-1-1-4_P2, #modal2-1-1-4_P3, #modal2-1-1-4_P4, #modal2-1-1-4_P5, #modal2-1-1-4_P5, #modal2-1-1-4_P6, #modal2-1-1-4_P7 {
+
+    & #modal2-1-1-4_P1,
+    #modal2-1-1-4_P2,
+    #modal2-1-1-4_P3,
+    #modal2-1-1-4_P4,
+    #modal2-1-1-4_P5,
+    #modal2-1-1-4_P5,
+    #modal2-1-1-4_P6,
+    #modal2-1-1-4_P7 {
         display: none;
     }
 }
@@ -1582,17 +1715,18 @@ img, .txtModal-2-2-2 p {
 .modal2-1-1-5_P0 {
     position: absolute;
     color: $textColor6;
-    top: 145px;
     background: $colorBtnModal3;
-    left: 122px;
-    height: 30px;
-    width: 232px;
+    top: 19vh;
+    left: 9.1vw;
+    height: 4.6vh;
+    width: 16.7vw;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 1vw;
     margin-bottom: 25px;
+
     &:hover {
         color: $textColor1;
         background: $colorHoverText;
@@ -1602,24 +1736,26 @@ img, .txtModal-2-2-2 p {
 .modal2-1-1-5_P1 {
     position: absolute;
     color: $textColor6;
-    top: 145px;
     background: $colorBtnModal3;
-    left: 355px;
-    height: 30px;
-    width: 210px;
+    top: 19vh;
+    left: 26.1vw;
+    height: 4.6vh;
+    width: 15.2vw;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    font-size: 13px;
-    margin-bottom: 25px;
+    font-size: 1vw;
+
     &:hover {
         color: $textColor1;
         background: $colorHoverText;
-        & ~ .textos_mdl2-1-1-5 #modal2-1-1-5_P0 {
+
+        &~.textos_mdl2-1-1-5 #modal2-1-1-5_P0 {
             display: none;
         }
-        & ~ .textos_mdl2-1-1-5 #modal2-1-1-5_P1 {
+
+        &~.textos_mdl2-1-1-5 #modal2-1-1-5_P1 {
             display: table;
         }
     }
@@ -1628,24 +1764,26 @@ img, .txtModal-2-2-2 p {
 .modal2-1-1-5_P2 {
     position: absolute;
     color: $textColor6;
-    top: 145px;
     background: $colorBtnModal3;
-    left: 567px;
-    height: 30px;
-    width: 235px;
+    top: 19vh;
+    left: 41.6vw;
+    height: 4.6vh;
+    width: 17vw;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    font-size: 13px;
-    margin-bottom: 25px;
+    font-size: 1vw;
+
     &:hover {
         color: $textColor1;
         background: $colorHoverText;
-        & ~ .textos_mdl2-1-1-5 #modal2-1-1-5_P0 {
+
+        &~.textos_mdl2-1-1-5 #modal2-1-1-5_P0 {
             display: none;
         }
-        & ~ .textos_mdl2-1-1-5 #modal2-1-1-5_P2 {
+
+        &~.textos_mdl2-1-1-5 #modal2-1-1-5_P2 {
             display: table;
         }
     }
@@ -1653,18 +1791,21 @@ img, .txtModal-2-2-2 p {
 
 .textos_mdl2-1-1-5 {
     display: flex;
-    width: 515px;
     position: absolute;
-    bottom: 11px;
-    left: 288px;
-    height: 132px;
+    width: 40vw;
+    bottom: 2vh;
+    left: 20vw;
+    height: 19vh;
     align-items: center;
-    padding: 30px;
     text-align: center;
-    font-size: 13px;
-    & #modal2-1-1-5_P1, #modal2-1-1-5_P2 {
+    padding: 1.5vw;
+    font-size: 1vw; 
+
+    & #modal2-1-1-5_P1,
+    #modal2-1-1-5_P2 {
         display: none;
     }
+
     & strong {
         font-weight: 700;
     }
@@ -1674,17 +1815,19 @@ img, .txtModal-2-2-2 p {
     position: absolute;
     display: flex;
     align-items: center;
-    top: 136px;
-    left: 223px;
-    width: 210px;
+    top: 18.5vh;
+    left: 17vw;
+    width: 14.5vw;
+
     & img {
-        max-width: 70px;
+        max-width: 5.2vw;
     }
+
     & p {
-        margin-left: 13px;
-        width: 10px;
+        margin-left: 1vw;
+        width: 8vw;
         font-weight: 700;
-        font-size: 17px;
+        font-size: 1.1vw;
         line-height: 1.2;
     }
 }
@@ -1693,17 +1836,19 @@ img, .txtModal-2-2-2 p {
     position: absolute;
     display: flex;
     align-items: center;
-    top: 215px;
-    left: 223px;
-    width: 210px;
+    top: 29.5vh;
+    left: 17vw;
+    width: 14.5vw;
+
     & img {
-        max-width: 70px;
+        max-width: 5.2vw;
     }
+
     & p {
-        margin-left: 13px;
-        width: 100px;
+        margin-left: 1vw;
+        width: 8vw;
         font-weight: 700;
-        font-size: 17px;
+        font-size: 1.1vw;
         line-height: 1.2;
     }
 }
@@ -1712,46 +1857,50 @@ img, .txtModal-2-2-2 p {
     position: absolute;
     display: flex;
     align-items: center;
-    top: 292px;
-    left: 223px;
-    width: 210px;
+    top: 40.1vh;
+    left: 17vw;
+    width: 14.5vw;
+
     & img {
-        max-width: 70px;
+        max-width: 5.2vw;
     }
+
     & p {
-        margin-left: 13px;
-        width: 10px;
+        margin-left: 1vw;
+        width: 8vw;
         font-weight: 700;
-        font-size: 17px;
+        font-size: 1.1vw;
         line-height: 1.2;
     }
 }
 
 .textos_mdl2-1-1-6 {
     display: flex;
-    width: 397px;
     position: absolute;
-    top: 99px;
-    right: 38px;
-    height: 303px;
+    width: 30vw;
+    top: 14vh;
+    right: 2vw;
+    height: 40vh;
     align-items: center;
-    padding: 30px;
     text-align: center;
-    font-size: $fontSize + 2;
+    padding: 2vw;
+    font-size: 1.2vw;
 
-    & #modal2-1-1-6_P1, #modal2-1-1-6_P2 {
+    & #modal2-1-1-6_P1,
+    #modal2-1-1-6_P2 {
         display: none;
     }
+
     & strong {
         font-weight: 700;
     }
 }
 
-.img-modal2-2-1{
+.img-modal2-2-1 {
     position: relative;
     width: 100%;
-    top: 35px;
-    height: 230px;
+    top: 7vh;
+    height: 33vh;
 
     img {
         width: auto;
@@ -1762,8 +1911,8 @@ img, .txtModal-2-2-2 p {
 }
 
 .btn-modal-2-2-1 {
-    bottom: 1rem;
-    right: 3rem;
+    bottom: 1vh;
+    right: 1vw;
     float: right;
     padding-left: 25px !important;
     padding-right: 25px !important;
@@ -1772,7 +1921,7 @@ img, .txtModal-2-2-2 p {
 .modal2-2-1Txt {
     position: relative;
     width: 100%;
-    top: 40px;
+    top: 7vh;
     left: 0;
     display: flex;
     justify-content: space-around;
@@ -1782,7 +1931,7 @@ img, .txtModal-2-2-2 p {
 
     p {
         width: 33%;
-        height: 95px;
+        height: 13vh;
         margin: 0;
         padding: 10px;
         font-size: 84%;
@@ -1808,7 +1957,7 @@ img, .txtModal-2-2-2 p {
 .txtModal-2-2-2 {
     position: relative;
     width: 73%;
-    top: 50px;
+    top: 6vh;
     left: 0;
     display: flex;
     justify-content: space-around;
@@ -1818,7 +1967,7 @@ img, .txtModal-2-2-2 p {
 
     p {
         width: 33%;
-        height: 280px;
+        height: 40vh;
         margin: 0;
         padding: 15px;
         font-size: 90%;
@@ -1827,28 +1976,28 @@ img, .txtModal-2-2-2 p {
         align-items: center;
         cursor: pointer;
         background-size: 100% 100%;
-        background-repeat: no-repeat;   
+        background-repeat: no-repeat;
 
-        &:nth-child(1){
+        &:nth-child(1) {
             background-image: url('../img/bck-modal2-2-2_P1.png');
         }
 
-        &:nth-child(2){
+        &:nth-child(2) {
             background-image: url('../img/bck-modal2-2-2_P2.png');
         }
 
-        &:nth-child(3){
+        &:nth-child(3) {
             background-image: url('../img/bck-modal2-2-2_P3.png');
         }
 
     }
 }
 
-.tip{
+.tip {
     position: relative;
     width: 73%;
-    height: 81px;
-    top: 55px;
+    height: 11vh;
+    top: 7vh;
     left: 0;
     display: flex;
     justify-content: space-around;
@@ -1856,90 +2005,95 @@ img, .txtModal-2-2-2 p {
     text-align: center;
     color: white;
     background-size: 100% 100%;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-image: url('../img/tip.png');
 
-    p{
+    p {
         width: 75%;
         margin-left: 15%;
     }
 }
 
-.btn-modal2-3{
+.btn-modal2-3 {
     position: absolute !important;
-    width: 100px;
+    width: 6.5vw;
     height: auto;
 
-    &.btn1{
-        top: 4.5rem;
-        left: 1rem;
+    &.btn1 {
+        top: 8vh;
+        left: 0vw;
     }
 
-    &.btn2{
-        top: 5.5rem;
-        left: 8.5rem;
+    &.btn2 {
+        top: 10vh;
+        left: 9vw;
     }
 
-    &.btn3{
-        top: 10.5rem;
-        left: 14rem;
+    &.btn3 {
+        top: 20vh;
+        left: 16vw;
     }
 
-    &.btn4{
-        top: 17.5rem;
-        left: 14rem;
+    &.btn4 {
+        top: 36vh;
+        left: 16vw;
     }
 
-    &.btn5{
-        top: 21.5rem;
-        left: 8rem;
+    &.btn5 {
+        top: 46vh;
+        left: 9vw;
     }
 
-    &.btn6{
-        top: 22.5rem;
-        left: 1rem;
+    &.btn6 {
+        top: 47vh;
+        left: 0vw;
     }
-} 
+}
 
-.textosModal2-3{
+.textosModal2-3 {
     position: absolute;
-    width: 350px;
-    height: 295px;
-    right: 12rem;
-    top: 7.2rem;
+    width: 26vw;
+    height: 41vh;
+    right: 13vw;
+    top: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 25px;
+    padding: 0 1vw;
     color: $textColor2;
 
     .titles {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
-        margin-bottom: 10px;
+        align-items: baseline;
+        margin-bottom: 1vh;
 
-        *{
+        * {
             margin-bottom: 0;
         }
 
-        h6{
+        h3{
+            font-size: 2vw;
+        }
+
+        h6 {
             color: $textColor8;
             font-weight: 600;
+            font-size: 1vw;
         }
     }
 
-    p{
+    p {
         font-size: 90%;
     }
 }
 
 .modal3-menu {
     position: absolute;
-    right: 4rem;
-    width: 450px;
-    height: 245px;
-    bottom: 4rem;
+    right: 2vw;
+    width: 35vw;
+    height: 40vh;
+    bottom: 3vh;
     font-size: 100%;
     display: flex;
     justify-content: space-around;
@@ -1957,26 +2111,26 @@ img, .txtModal-2-2-2 p {
                 &:before {
                     content: '';
                     position: absolute;
-                    top: -3px;
-                    left: 24px;
-                    right: -25px;
-                    bottom: -4px;
+                    top: -1vh;
+                    left: 1vw;
+                    right: 0;
+                    bottom: -1vh;
                     background: #fff;
                     z-index: -1;
-                    width: 177px;
+                    width: 16vw;
                     border-radius: 15px;
                 }
 
                 &:after {
                     content: '';
                     position: absolute;
-                    top: -3px;
-                    left: 24px;
-                    right: -25px;
-                    bottom: -4px;
+                    top: -1vh;
+                    left: 1vw;
+                    right: 0;
+                    bottom: -1vh;
                     background: #fff;
                     z-index: -1;
-                    width: 177px;
+                    width: 16vw;
                     border-radius: 15px;
                     filter: blur(40px)
                 }
@@ -1999,26 +2153,26 @@ img, .txtModal-2-2-2 p {
                 &:before {
                     content: '';
                     position: absolute;
-                    top: -3px;
-                    left: 248px;
-                    right: -25px;
-                    bottom: -4px;
+                    top: -1vh;
+                    left: 18.5vw;
+                    right: 0;
+                    bottom: -1vh;
                     background: #fff;
                     z-index: -1;
-                    width: 177px;
+                    width: 16vw;
                     border-radius: 15px;
                 }
 
                 &:after {
                     content: '';
                     position: absolute;
-                    top: -3px;
-                    left: 248px;
-                    right: -25px;
-                    bottom: -4px;
+                    top: -1vh;
+                    left: 18.5vw;
+                    right: 0;
+                    bottom: -1vh;
                     background: #fff;
                     z-index: -1;
-                    width: 177px;
+                    width: 16vw;
                     border-radius: 15px;
                     filter: blur(40px)
                 }
@@ -2034,8 +2188,8 @@ img, .txtModal-2-2-2 p {
         .item {
             background-repeat: no-repeat;
             background-size: 100% 100%;
-            min-width: 170px;
-            max-width: 170px;
+            min-width: 15vw;
+            max-width: 15vw;        
             height: 100%;
             padding: 15px 10px;
             border-radius: 15px;
@@ -2048,20 +2202,23 @@ img, .txtModal-2-2-2 p {
             font-weight: 400;
 
             img {
-                width: 45px;
+                width: 3vw;
                 height: auto;
                 display: block;
-                margin: 20px auto;
+                margin: 2vh auto;
             }
 
             span {
                 display: block;
                 margin: auto;
-                font-size: 170%;
+                font-size: 3vw;
                 font-weight: 700;
                 font-family: $font2;
             }
 
+            &:focus{
+                background-color: transparent;
+            }
         }
     }
 }
@@ -2134,10 +2291,12 @@ img, .txtModal-2-2-2 p {
 #slides-modal3-1 {
     width: 70%;
     float: right;
-    right: 2rem;
-    margin-top: 50px;
+    right: 2vw;
+    margin-top: 10vh;
+    height: 48vh !important;
 
     .slides {
+        height: 48vh !important;
 
         li {
             display: flex !important;
@@ -2148,14 +2307,14 @@ img, .txtModal-2-2-2 p {
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
                 background-position: center;
-                padding: 15px 35px 0 30px;
-                max-width: 275px;
-                min-width: 275px;
+                padding: 3vh 3vw 3vh 2vw;
+                max-width: 22vw;
+                min-width: 21vw;
 
                 img {
-                    width: 55px !important;
+                    width: 2vw !important;
                     height: auto;
-                    margin: 10px auto;
+                    margin: 1vh auto;
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center;
@@ -2164,6 +2323,7 @@ img, .txtModal-2-2-2 p {
                 p {
                     font-size: 88%;
                     font-weight: 600;
+                    background-color: #fff;
                 }
 
             }
@@ -2177,8 +2337,6 @@ img, .txtModal-2-2-2 p {
 
             .slide3-1-9 {
                 background-image: url("../img/slider1-2-modal3.png");
-                max-width: 350px;
-                min-width: 350px;
             }
 
         }
@@ -2209,18 +2367,21 @@ img, .txtModal-2-2-2 p {
 
 .menuTabs2 {
     position: absolute;
-    top: 6rem;
-    width: 650px;
-    right: 1.5rem;
+    width: 50vw;
+    height: 50vh;
+    top: 10vh;
+    right: 2vw;
 
     .tabs {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 8vh;
 
         .tab {
             max-width: 24.5%;
             min-width: 24.5%;
+            height: 100%;
 
             a {
                 padding: 0;
@@ -2229,6 +2390,7 @@ img, .txtModal-2-2-2 p {
                 align-content: center;
                 background-color: $colorTab;
                 color: #6878AD;
+                font-size: 1vw;
 
                 &:hover,
                 &:focus,
@@ -2263,23 +2425,24 @@ img, .txtModal-2-2-2 p {
 
 .slider2 {
     margin-top: 0;
+    height: 35vh !important;
 
     .slides {
         background-image: url("../img/slider1-modal3-2.png") !important;
         background-repeat: no-repeat !important;
-        background-size: contain !important;
+        background-size: 100% 100% !important;
         width: 90%;
+        height: 35vh !important;
         margin: 0 auto !important;
 
         li {
             display: flex;
-            align-items: center;
-            top: 1rem !important;
-            left: 3rem !important;
-            width: 80% !important;
-            height: 205px !important;
+            align-items: center;            
+            top: 1vh!important;
+            left: 4vw!important;
+            width: 80%!important;
+            height: 30vh!important;
             padding: 10px;
-            color: $textColor2;
         }
     }
 }
@@ -2288,7 +2451,7 @@ img, .txtModal-2-2-2 p {
     display: flex;
     align-items: center;
     font-size: 100%;
-    margin: 10px 0;
+    margin: 10px 0 0 0;
     color: $textColor7;
 
     img {

@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
     M.Tabs.init(elem);
 
     var options = {
-        height: 350,
+        height: 315,
         duration: 1500,
         interval: 30000,
         indicators: false
     }
 
     var options2 = {
-        height: 260,
+        height: 220,
         duration: 1500,
         interval: 30000,
         indicators: false
@@ -53,8 +53,10 @@ function btnModal2_1_1_6_1() {
     elem.classList.remove("pulse");
     var text = document.getElementById("modal2-1-1-6_P2");
     text.style.display = "none";
-    var text1 = document.getElementById("modal2-1-1-6_P0");
-    text1.style.display = "table";
+    var text1 = document.getElementById("modal2-1-1-6_P1");
+    text1.style.display = "none";
+    var text2 = document.getElementById("modal2-1-1-6_P0");
+    text2.style.display = "table";
     var elem1 = document.getElementById("imgModal2-1-1-6-2");
     elem1.classList.add("pulse");
 }
@@ -65,8 +67,10 @@ function btnModal2_1_1_6_2() {
     elem.classList.remove("pulse");
     var text = document.getElementById("modal2-1-1-6_P0");
     text.style.display = "none";
-    var text1 = document.getElementById("modal2-1-1-6_P1");
-    text1.style.display = "table";
+    var text = document.getElementById("modal2-1-1-6_P2");
+    text.style.display = "none";
+    var text2 = document.getElementById("modal2-1-1-6_P1");
+    text2.style.display = "table";
     var elem1 = document.getElementById("imgModal2-1-1-6-3");
     elem1.classList.add("pulse");
 }
