@@ -50,40 +50,48 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function btnModal2_1_1_6_1() {
     var elem = document.getElementById("imgModal2-1-1-6-1");
-    elem.classList.remove("pulse");
+    elem.classList.add("pulse");
+    var elem1 = document.getElementById("imgModal2-1-1-6-2");
+    elem1.classList.remove("pulse");
+    var elem1 = document.getElementById("imgModal2-1-1-6-3");
+    elem1.classList.remove("pulse");
     var text = document.getElementById("modal2-1-1-6_P2");
     text.style.display = "none";
     var text1 = document.getElementById("modal2-1-1-6_P1");
     text1.style.display = "none";
     var text2 = document.getElementById("modal2-1-1-6_P0");
     text2.style.display = "table";
-    var elem1 = document.getElementById("imgModal2-1-1-6-2");
-    elem1.classList.add("pulse");
 }
 
 
 function btnModal2_1_1_6_2() {
-    var elem = document.getElementById("imgModal2-1-1-6-2");
+    var elem = document.getElementById("imgModal2-1-1-6-1");
     elem.classList.remove("pulse");
-    var text = document.getElementById("modal2-1-1-6_P0");
-    text.style.display = "none";
+    var elem1 = document.getElementById("imgModal2-1-1-6-2");
+    elem1.classList.add("pulse");
+    var elem1 = document.getElementById("imgModal2-1-1-6-3");
+    elem1.classList.remove("pulse");
     var text = document.getElementById("modal2-1-1-6_P2");
     text.style.display = "none";
-    var text2 = document.getElementById("modal2-1-1-6_P1");
-    text2.style.display = "table";
-    var elem1 = document.getElementById("imgModal2-1-1-6-3");
-    elem1.classList.add("pulse");
+    var text2 = document.getElementById("modal2-1-1-6_P0");
+    text2.style.display = "none";
+    var text1 = document.getElementById("modal2-1-1-6_P1");
+    text1.style.display = "table";
 }
 
 function btnModal2_1_1_6_3() {
-    var elem = document.getElementById("imgModal2-1-1-6-3");
+    var elem = document.getElementById("imgModal2-1-1-6-1");
     elem.classList.remove("pulse");
-    var text = document.getElementById("modal2-1-1-6_P1");
-    text.style.display = "none";
-    var text1 = document.getElementById("modal2-1-1-6_P2");
-    text1.style.display = "table";
-    var elem1 = document.getElementById("imgModal2-1-1-6-1");
+    var elem1 = document.getElementById("imgModal2-1-1-6-2");
+    elem1.classList.remove("pulse");
+    var elem1 = document.getElementById("imgModal2-1-1-6-3");
     elem1.classList.add("pulse");
+    var text2 = document.getElementById("modal2-1-1-6_P0");
+    text2.style.display = "none";
+    var text1 = document.getElementById("modal2-1-1-6_P1");
+    text1.style.display = "none";
+    var text = document.getElementById("modal2-1-1-6_P2");
+    text.style.display = "table";
 }
 
 function btnModal1(){
@@ -113,14 +121,14 @@ function btnModal3(){
     elem2.classList.remove("pulse");
 }
 
-function hideIntro(){
-    var elem = document.getElementById("intro");
-    elem.classList.add("hide");
-}
-
 function showIntro(){
     var elem = document.getElementById("intro");
-    elem.classList.remove("hide");
+    elem.removeAttribute("style");
+}
+
+function hideIntro(){
+    var elem = document.getElementById("intro");
+    elem.style.display = "none";
 }
 
 function btnModal2_1(){
@@ -275,7 +283,7 @@ function flechaprev(){
         var elem = document.querySelector('#modal3-1-prev');
         elem.classList.remove("hide")
     }
-    var ele = document.querySelector('#slides-modal3-1 .slides li:nth-child(5).active');
+    var ele = document.querySelector('#slides-modal3-1 .slides li:nth-child(4).active');
     if(ele != null){
         var elem = document.querySelector('#modal3-1-next');
         elem.classList.add("hide")
@@ -288,7 +296,7 @@ function flechanext(){
         var elem = document.querySelector('#modal3-1-prev');
         elem.classList.add("hide")
     }
-    var ele = document.querySelector('#slides-modal3-1 .slides li:nth-child(4).active');
+    var ele = document.querySelector('#slides-modal3-1 .slides li:nth-child(3).active');
     if(ele != null){
         var elem = document.querySelector('#modal3-1-next');
         elem.classList.remove("hide")

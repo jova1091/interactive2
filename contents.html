@@ -19,7 +19,7 @@
             <div class="titles">
                 <h3>CURSO: ESTADÍSTICAS VITALES</h3>
                 <hr>
-                <h5>Módulo 3</h5>
+                <h5>Módulo 3 - Unidad 1</h5>
                 <h1>Módulo Certificación Médica de Defunciones</h1>
             </div>
             <a href="index.html" class="icon-home"><i class="material-icons">home</i></a>
@@ -28,15 +28,16 @@
             <hr>
             <div class="contenedor">
                 <img src="img/vitales-contents.png" alt="vitales" class="img-vitales-content">
+                <img src="img/central.png" alt="certificado nacido vivo" class="img-central">
 
                 <a id="btnModal1" href="#modal1" class="btn-modal1 modal-trigger pulse animated" onclick="btnModal1()">
                     <span>1</span> Generalidades
                 </a>
                 <a id="btnModal2" href="#modal2" class="btn-modal2 modal-trigger animated" onclick="btnModal2()">
-                    <span>2</span> Elementos Conceptuales
+                    <span>2</span> Elementos <br> Conceptuales
                 </a>
                 <a id="btnModal3" href="#modal3" class="btn-modal3 modal-trigger animated" onclick="btnModal3()">
-                    <span>3</span> Recomendaciones para la certificación médica de una defunción
+                    <span>3</span> Recomendaciones <br> para la certificación <br> médica de una <br> defunción
                 </a>
 
                 <!-- Modal 1 Structure -->
@@ -50,14 +51,14 @@
                             <div class="texto">
                                 <div id="intro">
                                     <p class="centered">
-                                        La certificación médica de una defunción <br> cumple dos funciones principales
+                                        La certificación médica de una defunción es un acto médico, legal y administrativo que da constancia de la ocurrencia de un fallecimiento y cumple   con dos funciones principales
                                     </p>
                                 </div>
-                                <div id="texto1" style="display: none;">
+                                <div id="texto1">
                                     <img src="img/btn1-modal1.png" alt="" class="ico-funcion">
                                     <p class="centered">
                                         Dar constancia de la ocurrencia del deceso y sus causas,
-                                        mediante procedimientos de atención post mortem y Coadyuvar en el reconocimiento
+                                        mediante procedimientos de atención post mortem y coadyuvar en el reconocimiento
                                         jurídico de los deberes y derechos del fallecido y sus familias, a través del
                                         registro civil.
                                     </p>
@@ -72,22 +73,28 @@
                                 </div>
                             </div>
                             <div class="menu">
+                                <span>generalidades</span>
                                 <span>funciones</span>
                                 <span>importante</span>
                                 <ul class="tabs">
                                     <li class="tab">
-                                        <a href="#texto1" onclick="hideIntro()" class="pulse animated">
+                                        <a href="#intro" class="pulse animated">
+                                            <img src="img/btn3-modal1.png" alt="" class="img-btn">
+                                        </a>
+                                    </li>
+                                    <li class="tab">
+                                        <a href="#texto1" class="pulse animated" onclick="hideIntro()" >
                                             <img src="img/btn1-modal1.png" alt="" class="img-btn">
                                         </a>
                                     </li>
                                     <li class="tab">
-                                        <a href="#texto2" onclick="hideIntro()" class="pulse animated">
+                                        <a href="#texto2" class="pulse animated" onclick="hideIntro()">
                                             <img src="img/btn2-modal1.png" alt="" class="img-btn">
                                         </a>
                                     </li>
                                     <li class="tab">
-                                        <a href="#modal1-1" class="modal-trigger modal-close pulse animated">
-                                            <img src="img/btn3-modal1.png" alt="" class="img-btn">
+                                        <a href="#modal1-1" class="modal-trigger modal-close pulse animated" >
+                                            <img src="img/btn4-modal1.png" alt="" class="img-btn">
                                         </a>
                                     </li>
                                 </ul>
@@ -202,13 +209,10 @@
                         <h3 class="etiquetaLarga">Características de la defunción</h3>
                         <div class="modal2-1_P0">
                             <p>
-                                La certificación de una defunción es un acto médico, legal y administrativo que da
-                                constancia de la ocurrencia de un fallecimiento. Las características de la defunción
-                                están determinadas por la edad, sexo, sitio de ocurrencia, manera de muerte y las causas
-                                de defunción.
+                                Las características de la defunción están determinadas por la edad, sexo, sitio de ocurrencia, manera de muerte y las causas de defunción.
                             </p>
                         </div>
-                        <a href="contents-2-1-1.html" class="btn-custom-modal pulse animated btn-modal-2-1">Tipos</a>
+                        <a href="contents-2-1-1.html" class="btn-custom-modal btn-modal-2-1"> <span class="pulse animated infinite">Tipos</span> </a>
                     </div>
                 </div>
 
@@ -408,7 +412,7 @@
                         <h3 class="etiqueta">Procedimentales</h3>
                         <div id="slides-modal3-1" class="slider">
                             <img id="modal3-1-prev" src="img/prev.png" alt="previows"
-                                class="modal3-1-prev hide infinite shake delay-1s slow animated "
+                                class="modal3-1-prev hide shake delay-1s slow animated "
                                 onclick="modal3_1_prev()">
                             <ul class="slides">
                                 <li>
@@ -463,9 +467,8 @@
                                     <div class="slide3-1-6">
                                         <img src="img/ico4-slide3-1.png" alt="">
                                         <p>
-                                            Tenga en cuenta que es diferente el lugar de ocurrencia (donde ocurre la
-                                            defunción), el lugar de residencia (donde vive el fallecido o madre del
-                                            fallecido) y el lugar de expedición (donde se certifica la defunción).
+                                            Es una buena práctica diligenciar las dos partes del certificado una vez
+                                            ocurre la defunción para evitar pérdidas de información.
                                         </p>
                                     </div>
                                 </li>
@@ -473,22 +476,13 @@
                                     <div class="slide3-1-7">
                                         <img src="img/ico4-slide3-1.png" alt="">
                                         <p>
-                                            Es una buena práctica diligenciar las dos partes del certificado una vez
-                                            ocurre la defunción para evitar pérdidas de información.
-                                        </p>
-                                    </div>
-                                    <div class="slide3-1-8">
-                                        <img src="img/ico4-slide3-1.png" alt="">
-                                        <p>
                                             Para que una persona sea considerado residente habitual (para el caso de
                                             fallecido o la madre según corresponda), en el país se considera una
                                             estancia mínima de seis meses habitando en el lugar.
                                         </p>
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="slide3-1-9">
-                                        <img src="img/ico5-slide3-1.png" alt="">
+                                    <div class="slide3-1-8">
+                                        <img src="img/ico4-slide3-1.png" alt="">
                                         <p>
                                             En lo concerniente al lugar de residencia habitual del fallecido o la madre
                                             según corresponda, en el país se considera una estancia mínima de seis meses
@@ -501,7 +495,7 @@
                                 </li>
                             </ul>
                             <img id="modal3-1-next" src="img/next.png" alt="next"
-                                class="modal3-1-next infinite shake delay-1s slow animated" onclick="modal3_1_next()">
+                                class="modal3-1-next shake delay-1s slow animated" onclick="modal3_1_next()">
                         </div>
                     </div>
                 </div>
@@ -557,7 +551,7 @@
                                 </div>
                                 <div id="slides-modal3-2-1" class="slider slider2">
                                     <img id="modal3-2-1-prev" src="img/prev.png" alt="previows"
-                                        class="modal3-2-prev hide infinite shake delay-1s slow animated "
+                                        class="modal3-2-prev hide shake delay-1s slow animated "
                                         onclick="modal3_2_1_prev()">
                                     <ul class="slides">
                                         <li>
@@ -614,7 +608,7 @@
                                         </li>
                                     </ul>
                                     <img id="modal3-2-1-next" src="img/next.png" alt="next"
-                                        class="modal3-2-next infinite shake delay-1s slow animated"
+                                        class="modal3-2-next shake delay-1s slow animated"
                                         onclick="modal3_2_1_next()">
                                 </div>
                             </div>
@@ -627,7 +621,7 @@
                                 </div>
                                 <div id="slides-modal3-2-2" class="slider slider2">
                                     <img id="modal3-2-2-prev" src="img/prev.png" alt="previows"
-                                        class="modal3-2-prev hide infinite shake delay-1s slow animated "
+                                        class="modal3-2-prev hide shake delay-1s slow animated "
                                         onclick="modal3_2_2_prev()">
                                     <ul class="slides">
                                         <li>
@@ -654,7 +648,7 @@
                                         </li>
                                     </ul>
                                     <img id="modal3-2-2-next" src="img/next.png" alt="next"
-                                        class="modal3-2-next infinite shake delay-1s slow animated"
+                                        class="modal3-2-next shake delay-1s slow animated"
                                         onclick="modal3_2_2_next()">
                                 </div>
                             </div>
@@ -667,7 +661,7 @@
                                 </div>
                                 <div id="slides-modal3-2-3" class="slider slider2">
                                     <img id="modal3-2-3-prev" src="img/prev.png" alt="previows"
-                                        class="modal3-2-prev hide infinite shake delay-1s slow animated "
+                                        class="modal3-2-prev hide shake delay-1s slow animated "
                                         onclick="modal3_2_3_prev()">
                                     <ul class="slides">
                                         <li>
@@ -694,7 +688,7 @@
                                         </li>
                                     </ul>
                                     <img id="modal3-2-3-next" src="img/next.png" alt="next"
-                                        class="modal3-2-next infinite shake delay-1s slow animated"
+                                        class="modal3-2-next shake delay-1s slow animated"
                                         onclick="modal3_2_3_next()">
                                 </div>
                             </div>
@@ -707,7 +701,7 @@
                                 </div>
                                 <div id="slides-modal3-2-4" class="slider slider2">
                                     <img id="modal3-2-4-prev" src="img/prev.png" alt="previows"
-                                        class="modal3-2-prev hide infinite shake delay-1s slow animated "
+                                        class="modal3-2-prev hide shake delay-1s slow animated "
                                         onclick="modal3_2_4_prev()">
                                     <ul class="slides">
                                         <li>
@@ -734,7 +728,7 @@
                                         </li>
                                     </ul>
                                     <img id="modal3-2-4-next" src="img/next.png" alt="next"
-                                        class="modal3-2-next infinite shake delay-1s slow animated"
+                                        class="modal3-2-next shake delay-1s slow animated"
                                         onclick="modal3_2_4_next()">
                                 </div>
                             </div>
