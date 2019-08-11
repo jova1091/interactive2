@@ -530,7 +530,7 @@ img,
 .mdl-2-1-1 .etiquetaLarga {
     position: absolute;
     color: white;
-    top: 4vh;
+    top: 3vh !important;
     left: 11vw;
     font-size: 1.7vw;
     margin: 0 !important;
@@ -553,7 +553,7 @@ img,
     background: transparent !important;
     color: white;
     position: absolute;
-    left: 19.1vw;
+    left: 17.5vw;
     top: 14vh;
 }
 
@@ -561,39 +561,39 @@ img,
     background: transparent !important;
     color: white;
     position: absolute;
-    left: 26.7vw;
-    bottom: 8vh;
+    left: 25vw;
+    bottom: 0vh;
 }
 
 .mdl-2-1-1 .modal2-1-1-menu div:nth-child(3) .item {
     background: transparent !important;
     color: white;
     position: absolute;
-    left: 31.3vw;
-    top: 19vh;
+    left: 29.6vw;
+    top: 21vh;
 }
 
 .mdl-2-1-1 .modal2-1-1-menu div:nth-child(4) .item {
     background: transparent !important;
     color: white;
     position: absolute;
-    right: 30.3vw;
-    top: 19vh;
+    right: 32.2vw;
+    top: 21vh;
 }
 
 .mdl-2-1-1 .modal2-1-1-menu div:nth-child(5) .item {
     background: transparent !important;
     color: white;
     position: absolute;
-    right: 25.5vw;
-    bottom: 8vh;
+    right: 27.3vw;
+    bottom: 0;
 }
 
 .mdl-2-1-1 .modal2-1-1-menu div:nth-child(6) .item {
     background: transparent !important;
     color: white;
     position: absolute;
-    right: 19vw;
+    right: 21vw;
     top: 14vh;
 }
 
@@ -636,8 +636,8 @@ img,
     background-size: 53%;
     position: absolute;
     width: 100vw;
-    height: 40vh;
-    top: 25vh;
+    height: 46vh;
+    top: 30vh;
     background-position-x: 50%;
 }
 
@@ -676,7 +676,8 @@ img,
     }
 
     &.mdl-2-1-1 {
-        background-image: url("../img/bck-modal2-1-1.jpg");
+        //background-image: url("../img/bck-modal2-1-1.jpg");
+        background-image: url("../img/fondo.jpg");
     }
 
     &.mdl-2-1-1-1 {
@@ -1281,9 +1282,9 @@ img,
             &:hover {
                 color: $textColor1 !important;
                 background-color: rgba(10, 116, 255, 0.548);
-                border: 1px solid rgba(0, 0, 0, 0.301);
                 outline-color: rgba(255, 255, 255, 0);
                 outline-offset: 15px;
+                cursor: pointer;
             }
 
         }
@@ -2505,4 +2506,12 @@ img,
     cursor: pointer;
     z-index: 3;
     animation-iteration-count: inherit !important;
+}
+
+/* Ajuste modal al 100% de la pantalla */
+#modal2-1-1 {
+    top: 0 !important;
+    margin: 0 !important;
+    min-height: 100vh !important;
+    width: 100vw !important;
 }

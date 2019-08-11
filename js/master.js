@@ -236,7 +236,7 @@ function btnModal2_1_1_6() {
     elem_3.classList.remove("pulse");
     elem_4.classList.remove("pulse");
     elem_5.classList.remove("pulse");
-    var elem1 = document.getElementById("imgModal2-1-1-1");
+    var elem1 = document.getElementById("btn_close");
     elem1.classList.add("pulse");
 }
 
