@@ -163,6 +163,7 @@ function btnModal2_1_1_1() {
     elem_5.classList.remove("pulse");
     var elem1 = document.getElementById("imgModal2-1-1-2");
     elem1.classList.add("pulse");
+    elem_1.src = "img/btn1-modal2-1-1.png";
 }
 
 function btnModal2_1_1_2() {
@@ -178,6 +179,7 @@ function btnModal2_1_1_2() {
     elem_5.classList.remove("pulse");
     var elem1 = document.getElementById("imgModal2-1-1-3");
     elem1.classList.add("pulse");
+    elem_1.src = "img/btn1-modal2-1-1.png";
 }
 
 function btnModal2_1_1_3() {
@@ -193,6 +195,7 @@ function btnModal2_1_1_3() {
     elem_5.classList.remove("pulse");
     var elem1 = document.getElementById("imgModal2-1-1-4");
     elem1.classList.add("pulse");
+    elem_1.src = "img/btn1-modal2-1-1.png";
 }
 
 function btnModal2_1_1_4() {
@@ -208,6 +211,7 @@ function btnModal2_1_1_4() {
     elem_5.classList.remove("pulse");
     var elem1 = document.getElementById("imgModal2-1-1-5");
     elem1.classList.add("pulse");
+    elem_1.src = "img/btn1-modal2-1-1.png";
 }
 
 function btnModal2_1_1_5() {
@@ -223,6 +227,7 @@ function btnModal2_1_1_5() {
     elem_5.classList.remove("pulse");
     var elem1 = document.getElementById("imgModal2-1-1-6");
     elem1.classList.add("pulse");
+    elem_1.src = "img/btn1-modal2-1-1.png";
 }
 
 function btnModal2_1_1_6() {
@@ -238,6 +243,7 @@ function btnModal2_1_1_6() {
     elem_5.classList.remove("pulse");
     var elem1 = document.getElementById("btn_close");
     elem1.classList.add("pulse");
+    elem_1.src = "img/btn1-modal2-1-1.png";
 }
 
 function btnModal3_1(){
