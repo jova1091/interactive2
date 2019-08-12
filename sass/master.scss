@@ -135,7 +135,7 @@ header {
         color: $textColor1;
         cursor: pointer;
 
-        .material-icons{
+        .material-icons {
             font-size: 2vw;
         }
     }
@@ -187,7 +187,8 @@ img,
     }
 }
 
-.modal3-1-next, .modal3-1-prev {
+.modal3-1-next,
+.modal3-1-prev {
     animation-iteration-count: inherit !important;
 }
 
@@ -202,7 +203,7 @@ img,
     display: block;
 }
 
-.img-central{
+.img-central {
     position: absolute;
     top: 33vh;
     left: 38vw;
@@ -264,7 +265,7 @@ img,
     left: 35vw;
     z-index: 2;
     max-height: 45vh;
-    width: 32vw!important;
+    width: 32vw !important;
     overflow: auto;
 
     .title {
@@ -806,7 +807,7 @@ img,
         }
 
         .menu {
-            margin: 7vh 0 0!important;
+            margin: 7vh 0 0 !important;
             height: 15vh;
             border: 1px dotted $btnBckcolor;
             border-radius: 15px;
@@ -871,7 +872,7 @@ img,
                 line-height: 1;
                 z-index: 1;
                 margin-top: -3vh;
-                
+
                 &:nth-child(2) {
                     left: 13.5vw;
                 }
@@ -879,7 +880,7 @@ img,
                 &:nth-child(3) {
                     left: 24.4vw;
                 }
-                
+
             }
 
 
@@ -990,22 +991,22 @@ img,
     bottom: 4vh;
     right: 4vw;
     float: right;
-    padding-left: 2vw!important;
-    padding-right: 2vw!important;
+    padding-left: 2vw !important;
+    padding-right: 2vw !important;
 }
 
 .btn-modal-1-2 {
     bottom: 5vh;
     right: 1vw;
     float: right;
-    padding-left: 2vw!important;
+    padding-left: 2vw !important;
 }
 
 .btn-modal-2-1 {
     bottom: 12vh;
     left: 24vw;
     float: left;
-    padding: 1vh 4vw!important;
+    padding: 1vh 4vw !important;
     animation-iteration-count: inherit !important;
 }
 
@@ -1111,7 +1112,7 @@ img,
 
 .modal2-menu {
     position: absolute;
-    right: 1vw; 
+    right: 1vw;
     width: 45vw;
     height: 32vh;
     bottom: 2vh;
@@ -1820,7 +1821,7 @@ img,
     align-items: center;
     text-align: center;
     padding: 1.5vw;
-    font-size: 1vw; 
+    font-size: 1vw;
 
     & #modal2-1-1-5_P1,
     #modal2-1-1-5_P2 {
@@ -1907,7 +1908,7 @@ img,
     padding: 2vw;
     font-size: 1.2vw;
 
-    img{
+    img {
         display: block;
         margin: 0 auto;
         width: 65px;
@@ -2099,7 +2100,7 @@ img,
             margin-bottom: 0;
         }
 
-        h3{
+        h3 {
             font-size: 2vw;
         }
 
@@ -2216,7 +2217,7 @@ img,
             background-repeat: no-repeat;
             background-size: 100% 100%;
             min-width: 15vw;
-            max-width: 15vw;        
+            max-width: 15vw;
             height: 100%;
             padding: 15px 10px;
             border-radius: 15px;
@@ -2243,7 +2244,7 @@ img,
                 font-family: $font2;
             }
 
-            &:focus{
+            &:focus {
                 background-color: transparent;
             }
         }
@@ -2362,8 +2363,8 @@ img,
                 }
             }
 
-            .slide3-1-8{
-                p{
+            .slide3-1-8 {
+                p {
                     font-size: 90%;
                 }
             }
@@ -2425,11 +2426,23 @@ img,
                 &.active {
                     background-color: $textColor4 !important;
                     color: $textColor1;
+
+                    span{
+                        color: $textColor4 !important;
+                        background: $textColor3 !important;
+                    }
                 }
 
                 img {
                     height: 100%;
                     width: auto;
+                }
+
+                span {
+                    
+                    width: 40px;
+                    font-size: 35px;
+                    font-weight: 900;
                 }
 
                 p {
@@ -2454,6 +2467,30 @@ img,
 .slider2 {
     margin-top: 0;
     height: 35vh !important;
+    
+    span {
+        position: absolute;
+        right: -10px;
+        top: calc(50% - 50px);
+        cursor: pointer;
+        z-index: 2;
+        animation-iteration-count: inherit!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        font-size: 35px;
+        font-weight: 900;
+        color: $textColor4 !important;
+        border-radius: 50%;
+        border: 1px solid;
+        background-color: $colorTab;
+
+        &:hover{
+            background-color: $textColor3;
+        }
+    }
 
     .slides {
         background-image: url("../img/slider1-modal3-2.png") !important;
@@ -2465,11 +2502,11 @@ img,
 
         li {
             display: flex;
-            align-items: center;            
-            top: 1vh!important;
-            left: 4vw!important;
-            width: 80%!important;
-            height: 30vh!important;
+            align-items: center;
+            top: 1vh !important;
+            left: 4vw !important;
+            width: 80% !important;
+            height: 30vh !important;
             padding: 10px;
         }
     }

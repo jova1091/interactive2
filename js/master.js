@@ -335,6 +335,9 @@ function flechaprev2(){
     if(ele != null){
         var elem = document.querySelector('#modal3-2-1-next');
         elem.classList.add("hide")
+        var elem = document.querySelector('#slides-modal3-2-1 span');
+        elem.classList.add("pulse")
+        elem.classList.remove("hide");
     }
 }
 
@@ -377,8 +380,12 @@ function flechaprev3(){
     if(ele != null){
         var elem = document.querySelector('#modal3-2-2-next');
         elem.classList.add("hide")
+        var elem = document.querySelector('#slides-modal3-2-2 span');
+        elem.classList.add("pulse")
+        elem.classList.remove("hide");
     }
 }
+
 
 function flechanext3(){
     var el = document.querySelector('#slides-modal3-2-2 .slides li:nth-child(1).active');
@@ -418,7 +425,10 @@ function flechaprev4(){
     var ele = document.querySelector('#slides-modal3-2-3 .slides li:nth-child(2).active');
     if(ele != null){
         var elem = document.querySelector('#modal3-2-3-next');
-        elem.classList.add("hide")
+        elem.classList.add("hide");
+        var elem = document.querySelector('#slides-modal3-2-3 span');
+        elem.classList.add("pulse")
+        elem.classList.remove("hide");
     }
 }
 
@@ -574,4 +584,37 @@ function removeHide5(){
     elem2.classList.add("hide");
     var elem3 = document.getElementById("textosModal2-3-P6");
     elem3.classList.remove("hide");
+}
+
+function changeTab2(){
+    var elem = document.querySelector("#tabModal3-1");
+    elem.style.display = "none";
+    var el = document.querySelector("#tabModal3-2");
+    el.style.display = "block";
+    var ele = document.querySelector("#tabs-modal3-2 .tabs li a.active");
+    ele.classList.remove("active");
+    var eleme = document.querySelector("#tabs-modal3-2 .tabs li:nth-child(2) a");
+    eleme.classList.add("active");
+}
+
+function changeTab3(){
+    var elem = document.querySelector("#tabModal3-2");
+    elem.style.display = "none";
+    var el = document.querySelector("#tabModal3-3");
+    el.style.display = "block";
+    var ele = document.querySelector("#tabs-modal3-2 .tabs li a.active");
+    ele.classList.remove("active");
+    var eleme = document.querySelector("#tabs-modal3-2 .tabs li:nth-child(3) a");
+    eleme.classList.add("active");
+}
+
+function changeTab4(){
+    var elem = document.querySelector("#tabModal3-3");
+    elem.style.display = "none";
+    var el = document.querySelector("#tabModal3-4");
+    el.style.display = "block";
+    var ele = document.querySelector("#tabs-modal3-2 .tabs li a.active");
+    ele.classList.remove("active");
+    var eleme = document.querySelector("#tabs-modal3-2 .tabs li:nth-child(4) a");
+    eleme.classList.add("active");
 }
