@@ -490,24 +490,24 @@ function flechanext5(){
 function hide1(){
     var elem = document.getElementById("modal2-2-1P2");
     elem.classList.remove("hide");
-    elem.classList.add("pulse");
+    elem.classList.add("flipInX");
     var elem1 = document.getElementById("modal2-2-1P1");
-    elem1.classList.remove("pulse");
+    elem1.classList.remove("flipInX");
 }
 
 function hide2(){
     var elem = document.getElementById("modal2-2-1P3");
     elem.classList.remove("hide");
-    elem.classList.add("pulse");
+    elem.classList.add("flipInX");
     var elem1 = document.getElementById("modal2-2-1P2");
-    elem1.classList.remove("pulse");
+    elem1.classList.remove("flipInX");
 }
 
 function hide3(){
     var elem = document.getElementById("div-img");
     elem.classList.remove("hide");
     var elem1 = document.getElementById("modal2-2-1P3");
-    elem1.classList.remove("pulse");
+    elem1.classList.remove("flipInX");
 }
 
 function hidden1(){
@@ -526,20 +526,54 @@ function hidden2(){
 }
 
 function removeHide(){
+    var elem = document.getElementById("btn1-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn3-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn4-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn5-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn6-model2-3");
+    elem.classList.remove("pulse");
     var elem1 = document.getElementById("btn2-model2-3");
     elem1.classList.add("pulse");
     var elem2 = document.getElementById("textosModal2-3-P6");
     elem2.classList.add("hide");
     var elem3 = document.getElementById("textosModal2-3-P1");
     elem3.classList.remove("hide");
+    var elem4 = document.getElementById("textosModal2-3-P2");
+    elem4.classList.add("hide");
+    var elem5 = document.getElementById("textosModal2-3-P4");
+    elem5.classList.add("hide");
+    var elem6 = document.getElementById("textosModal2-3-P5");
+    elem6.classList.add("hide");
+    var elem7 = document.getElementById("textosModal2-3-P3");
+    elem7.classList.add("hide");
 }
 function removeHide1(){
+    var elem = document.getElementById("btn1-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn4-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn5-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn6-model2-3");
+    elem.classList.remove("pulse");
     var elem = document.getElementById("btn2-model2-3");
     elem.classList.remove("pulse");
     var elem1 = document.getElementById("btn3-model2-3");
     elem1.classList.add("pulse");
     var elem2 = document.getElementById("textosModal2-3-P1");
     elem2.classList.add("hide");
+    var elem4 = document.getElementById("textosModal2-3-P3");
+    elem4.classList.add("hide");
+    var elem5 = document.getElementById("textosModal2-3-P4");
+    elem5.classList.add("hide");
+    var elem6 = document.getElementById("textosModal2-3-P5");
+    elem6.classList.add("hide");
+    var elem7 = document.getElementById("textosModal2-3-P6");
+    elem7.classList.add("hide");
     var elem3 = document.getElementById("textosModal2-3-P2");
     elem3.classList.remove("hide");
 }
@@ -549,41 +583,107 @@ function removeHide2(){
     elem.classList.remove("pulse");
     var elem1 = document.getElementById("btn4-model2-3");
     elem1.classList.add("pulse");
+    var elem = document.getElementById("btn1-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn2-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn5-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn6-model2-3");
+    elem.classList.remove("pulse");
     var elem2 = document.getElementById("textosModal2-3-P2");
     elem2.classList.add("hide");
     var elem3 = document.getElementById("textosModal2-3-P3");
     elem3.classList.remove("hide");
+    var elem4 = document.getElementById("textosModal2-3-P4");
+    elem4.classList.add("hide");
+    var elem5 = document.getElementById("textosModal2-3-P5");
+    elem5.classList.add("hide");
+    var elem6 = document.getElementById("textosModal2-3-P6");
+    elem6.classList.add("hide");
+    var elem7 = document.getElementById("textosModal2-3-P1");
+    elem7.classList.add("hide");
 }
 
 function removeHide3(){
+    var elem = document.getElementById("btn1-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn2-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn3-model2-3");
+    elem.classList.remove("pulse");
     var elem = document.getElementById("btn4-model2-3");
     elem.classList.remove("pulse");
     var elem1 = document.getElementById("btn5-model2-3");
     elem1.classList.add("pulse");
+    var elem = document.getElementById("btn6-model2-3");
+    elem.classList.remove("pulse");
     var elem2 = document.getElementById("textosModal2-3-P3");
     elem2.classList.add("hide");
     var elem3 = document.getElementById("textosModal2-3-P4");
     elem3.classList.remove("hide");
+    var elem2 = document.getElementById("textosModal2-3-P5");
+    elem2.classList.add("hide");
+    var elem2 = document.getElementById("textosModal2-3-P6");
+    elem2.classList.add("hide");
+    var elem2 = document.getElementById("textosModal2-3-P1");
+    elem2.classList.add("hide");
+    var elem2 = document.getElementById("textosModal2-3-P2");
+    elem2.classList.add("hide");
 }
 
 function removeHide4(){
+    var elem = document.getElementById("btn1-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn2-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn3-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn4-model2-3");
+    elem.classList.remove("pulse");
     var elem = document.getElementById("btn5-model2-3");
     elem.classList.remove("pulse");
     var elem1 = document.getElementById("btn6-model2-3");
     elem1.classList.add("pulse");
-    var elem2 = document.getElementById("textosModal2-3-P4");
-    elem2.classList.add("hide");
     var elem3 = document.getElementById("textosModal2-3-P5");
     elem3.classList.remove("hide");
+    var elem2 = document.getElementById("textosModal2-3-P1");
+    elem2.classList.add("hide");
+    var elem2 = document.getElementById("textosModal2-3-P2");
+    elem2.classList.add("hide");
+    var elem2 = document.getElementById("textosModal2-3-P3");
+    elem2.classList.add("hide");
+    var elem2 = document.getElementById("textosModal2-3-P4");
+    elem2.classList.add("hide");
+    var elem2 = document.getElementById("textosModal2-3-P6");
+    elem2.classList.add("hide");
 }
 
 function removeHide5(){
+    var elem = document.getElementById("btn1-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn2-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn3-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn4-model2-3");
+    elem.classList.remove("pulse");
+    var elem = document.getElementById("btn5-model2-3");
+    elem.classList.remove("pulse");
     var elem = document.getElementById("btn6-model2-3");
     elem.classList.remove("pulse");
-    var elem2 = document.getElementById("textosModal2-3-P5");
-    elem2.classList.add("hide");
     var elem3 = document.getElementById("textosModal2-3-P6");
     elem3.classList.remove("hide");
+    var elem2 = document.getElementById("textosModal2-3-P5");
+    elem2.classList.add("hide");
+    var elem2 = document.getElementById("textosModal2-3-P4");
+    elem2.classList.add("hide");
+    var elem2 = document.getElementById("textosModal2-3-P3");
+    elem2.classList.add("hide");
+    var elem2 = document.getElementById("textosModal2-3-P2");
+    elem2.classList.add("hide");
+    var elem2 = document.getElementById("textosModal2-3-P1");
+    elem2.classList.add("hide");
 }
 
 function changeTab2(){

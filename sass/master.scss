@@ -1400,12 +1400,13 @@ img,
         position: absolute;
         max-width: 34vw;
         z-index: 1;
+        margin-top: -12px;
     }
 
     & p {
         position: absolute;
         z-index: 2;
-        padding: 2.5vh;
+        padding: 1vh 2.5vh;
         width: 29vw;
         margin-left: 10vh;
         line-height: 1.2;
@@ -1440,12 +1441,13 @@ img,
         position: absolute;
         max-width: 34.5vw;
         z-index: 1;
+        margin-top: -14px;
     }
 
     & p {
         position: absolute;
         z-index: 2;
-        padding: 2.5vh;
+        padding: 0vh 2.5vh;
         width: 29vw;
         margin-left: 10vh;
         line-height: 1.2;
@@ -1481,12 +1483,13 @@ img,
         position: absolute;
         max-width: 34.5vw;
         z-index: 1;
+        margin-top: -10px;
     }
 
     & p {
         position: absolute;
         z-index: 2;
-        padding: 2.5vh;
+        padding: .5vh 2.5vh;
         width: 29vw;
         margin-left: 10vh;
         line-height: 1.2;
@@ -1852,6 +1855,7 @@ img,
         font-weight: 700;
         font-size: 1.1vw;
         line-height: 1.2;
+        margin-top: -12px;
     }
 }
 
@@ -1874,6 +1878,7 @@ img,
         font-weight: 700;
         font-size: 1.1vw;
         line-height: 1.2;
+        margin-top: -12px;
     }
 }
 
@@ -1896,6 +1901,7 @@ img,
         font-weight: 700;
         font-size: 1.1vw;
         line-height: 1.2;
+        margin-top: -12px;
     }
 }
 
@@ -2053,10 +2059,11 @@ img,
     position: absolute !important;
     width: 6.5vw;
     height: auto;
+    cursor: pointer;
 
     &.btn1 {
         top: 8vh;
-        left: 0vw;
+        left: 1.5vw;
     }
 
     &.btn2 {
@@ -2081,7 +2088,7 @@ img,
 
     &.btn6 {
         top: 47vh;
-        left: 0vw;
+        left: 1.5vw;
     }
 }
 
