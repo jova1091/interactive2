@@ -205,7 +205,7 @@ img,
 
 .img-central {
     position: absolute;
-    top: 33vh;
+    top: 24vh;
     left: 38vw;
     width: 340px;
 }
@@ -808,7 +808,7 @@ img,
 
         .menu {
             margin: 7vh 0 0 !important;
-            height: 15vh;
+            height: 13vh;
             border: 1px dotted $btnBckcolor;
             border-radius: 15px;
             display: flex;
@@ -817,7 +817,7 @@ img,
 
 
             .tabs {
-                height: 13vh;
+                height: 11vh;
                 background: transparent;
                 display: flex;
                 border-radius: 14px;
@@ -886,7 +886,7 @@ img,
 
             .img-btn {
                 display: block;
-                margin: 2vh auto;
+                margin: 2vh -4px auto;
                 height: 4vw;
                 width: auto;
                 border-radius: 50%;
@@ -2565,4 +2565,13 @@ img,
     margin: 0 !important;
     min-height: 100vh !important;
     width: 100vw !important;
+}
+
+.text-note {
+    position: absolute;
+    bottom: 3px;
+    font-weight: 700;
+    background: #01b7f9;
+    padding: 2px 10px;
+    font-size: .9vw;
 }
